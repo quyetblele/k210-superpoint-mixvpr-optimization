@@ -1,2 +1,3 @@
 nncase @ file:///home/quyet/k210_lab/third_party/nncase-1.8.0.20220929-cp38-cp38-manylinux_2_24_x86_64.whl#sha256=f03459338b1ec47a571fb8bf4e347a0db8da530ef1766a919f40681274a6527f
 numpy==1.24.4
+onnx==1.14.1
