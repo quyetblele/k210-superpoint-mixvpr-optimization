@@ -1,0 +1,6 @@
+name: k210
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+prefix: /home/quyet/miniconda3/envs/k210

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+
+artifacts/
+reports/*.log
+
+# Downloaded third-party binaries
+third_party/*.whl
+
+.DS_Store
+Thumbs.db
