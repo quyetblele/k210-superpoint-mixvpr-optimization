@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT=/home/quyet/k210_lab
-PY="$ROOT/.venv-mixvpr-cuda/bin/python"
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+PY="${MIXVPR_PYTHON:-python3}"
 export PYTHONPATH="$ROOT/mixvpr/src${PYTHONPATH:+:$PYTHONPATH}"
 
 exec "$PY" "$ROOT/mixvpr/scripts/v2/cli.py" "$@"

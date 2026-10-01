@@ -1,5 +1,29 @@
 # K210 Edge AI workspace
 
+## Public handoff / quick start
+
+This repository contains the SuperPoint and MixVPR optimization work for K210, including source, configs, research scripts, selected project checkpoints, and final ONNX/KModel deployment artifacts. Large public datasets and upstream pretrained models are intentionally excluded; see `datasets/README.md` and `pretrained/README.md`.
+
+```bash
+git clone https://github.com/quyetblele/k210-superpoint-mixvpr-optimization.git
+cd k210-superpoint-mixvpr-optimization
+
+# CPU/PyTorch environment: install PyTorch plus the packages used by the scripts.
+# K210 compiler environment:
+conda env create -f environment.yml
+conda activate k210
+# install the pinned nncase 1.8.0.20220929 wheel; verify nncase-wheel.sha256
+
+# Structural checks that do not require downloading the full datasets:
+MIXVPR_PYTHON=python3 ./mixvpr/run check
+SP_TORCH_PYTHON=python3 ./superpoint/run status
+
+# Ready-to-use deployment artifacts:
+ls deployment/k210_release/models
+```
+
+Final optimized checkpoints are under `weights/`; final host-validated deployment files and deterministic test vectors are under `deployment/k210_release/`. Board latency, physical SRAM peak, power, and long-run stability still require measurements on actual K210 hardware.
+
 Đang làm **SuperPoint → trained FP32 → ONNX → 8-bit PTQ → K210**, với SuperPoint là reference implementation đầu tiên. Mục tiêu là chất lượng hữu ích trong giới hạn phần cứng, có bằng chứng ở từng gate.
 
 - [Workflow và command chuẩn](docs/WORKFLOW.md)

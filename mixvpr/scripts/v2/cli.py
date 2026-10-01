@@ -9,7 +9,7 @@ import sys
 
 import torch
 
-ROOT = Path("/home/quyet/k210_lab")
+ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "mixvpr/src"))
 
 from mixvpr_k210.config import (

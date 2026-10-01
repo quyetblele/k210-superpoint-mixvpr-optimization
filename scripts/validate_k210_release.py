@@ -32,13 +32,26 @@ def main() -> None:
         rows.append({"file": rel, "sha256": ok})
         if not ok:
             raise SystemExit(f"HASH_FAIL {rel}")
+    rng = np.random.default_rng(20260918)
+    inputs = {
+        "mixvpr": {
+            "linspace": np.linspace(-1, 1, 3 * 240 * 240, dtype=np.float32).reshape(1, 3, 240, 240),
+            "seeded_random": rng.standard_normal((1, 3, 240, 240), dtype=np.float32),
+            "zeros": np.zeros((1, 3, 240, 240), dtype=np.float32),
+        },
+        "superpoint": {
+            "linspace": np.linspace(0, 1, 184 * 320, dtype=np.float32).reshape(1, 1, 184, 320),
+            "seeded_random": rng.random((1, 1, 184, 320), dtype=np.float32),
+            "zeros": np.zeros((1, 1, 184, 320), dtype=np.float32),
+        },
+    }
     for key in ("mixvpr", "superpoint"):
         onnx_rel = m["models"][key]["onnx"]
         model = onnx.load(str(PKG / onnx_rel))
         onnx.checker.check_model(model)
         sess = ort.InferenceSession(str(PKG / onnx_rel), providers=["CPUExecutionProvider"])
         for name, spec in m["host_checks"]["test_vectors"][key].items():
-            x = np.load(PKG / "test_vectors" / f"{key}_{name}_input.npy")
+            x = inputs[key][name]
             out = sess.run(None, {sess.get_inputs()[0].name: x})
             if key == "mixvpr":
                 assert out[0].shape == (1, 512) and np.isfinite(out[0]).all()

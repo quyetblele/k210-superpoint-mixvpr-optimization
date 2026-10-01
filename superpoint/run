@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 sp_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-torch_python="${SP_TORCH_PYTHON:-$sp_root/../.venv-mixvpr-cuda/bin/python}"
-nncase_python="${SP_NNCASE_PYTHON:-/home/quyet/miniconda3/envs/k210/bin/python}"
+torch_python="${SP_TORCH_PYTHON:-python3}"
+nncase_python="${SP_NNCASE_PYTHON:-python3}"
 stage="${1:-status}"
 if (($#)); then shift; fi
 case "$stage" in

@@ -3,4 +3,7 @@ channels:
   - defaults
 dependencies:
   - python=3.8
-prefix: /home/quyet/miniconda3/envs/k210
+  - pip
+  - pip:
+      - numpy==1.24.4
+      - onnx==1.14.1

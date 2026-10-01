@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from pathlib import Path
 import json
 
-ROOT = Path("/home/quyet/k210_lab")
+ROOT = Path(__file__).resolve().parents[3]
 
 @dataclass(frozen=True)
 class ModelSpec:

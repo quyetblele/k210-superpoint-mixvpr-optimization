@@ -1,0 +1,316 @@
+{
+  "status": "HOST_VALIDATED_READY_FOR_BOARD_IO_TEST",
+  "generated": "2026-09-18",
+  "toolchain": {
+    "nncase": "1.8.0.20220929",
+    "_nncase": "1.8.0-55be52f",
+    "target": "k210"
+  },
+  "models": {
+    "mixvpr": {
+      "kmodel": "models/mixvpr_d4_240x240.kmodel",
+      "onnx": "models/mixvpr_d4_240x240.onnx",
+      "onnx_contract": {
+        "inputs": [
+          {
+            "name": "normalized_rgb",
+            "shape": [
+              1,
+              3,
+              240,
+              240
+            ],
+            "dtype": 1
+          }
+        ],
+        "outputs": [
+          {
+            "name": "raw_descriptor",
+            "shape": [
+              1,
+              512
+            ],
+            "dtype": 1
+          }
+        ],
+        "nodes": 100
+      }
+    },
+    "superpoint": {
+      "kmodel": "models/superpoint_full_r2_cw.kmodel",
+      "onnx": "models/superpoint_full_r2_cw.onnx",
+      "onnx_contract": {
+        "inputs": [
+          {
+            "name": "image",
+            "shape": [
+              1,
+              1,
+              184,
+              320
+            ],
+            "dtype": 1
+          }
+        ],
+        "outputs": [
+          {
+            "name": "detector_logits",
+            "shape": [
+              1,
+              65,
+              23,
+              40
+            ],
+            "dtype": 1
+          },
+          {
+            "name": "descriptor_map",
+            "shape": [
+              1,
+              256,
+              23,
+              40
+            ],
+            "dtype": 1
+          }
+        ],
+        "nodes": 25
+      }
+    }
+  },
+  "host_checks": {
+    "onnx_checker": "PASS",
+    "onnxruntime": "PASS",
+    "finite_outputs": true,
+    "test_vectors": {
+      "mixvpr": {
+        "linspace": {
+          "input_shape": [
+            1,
+            3,
+            240,
+            240
+          ],
+          "raw_shape": [
+            1,
+            512
+          ],
+          "raw_finite": true,
+          "normalized_norm": 1.0,
+          "raw_sha256": "a29db5825fc40a0fa60f99c0715368477009b048292ec26b55f425beed537dc9"
+        },
+        "seeded_random": {
+          "input_shape": [
+            1,
+            3,
+            240,
+            240
+          ],
+          "raw_shape": [
+            1,
+            512
+          ],
+          "raw_finite": true,
+          "normalized_norm": 0.9999999403953552,
+          "raw_sha256": "6884854b25dd1cabc3a4bf3595975e683e0ce3c16ffe1f3a5679cd70dc169c4c"
+        },
+        "zeros": {
+          "input_shape": [
+            1,
+            3,
+            240,
+            240
+          ],
+          "raw_shape": [
+            1,
+            512
+          ],
+          "raw_finite": true,
+          "normalized_norm": 1.0,
+          "raw_sha256": "f33e6bbb42aa55704f737ffe70ab373a30810aeefe048ef29d7d73dbbc3c1de7"
+        }
+      },
+      "superpoint": {
+        "linspace": {
+          "input_shape": [
+            1,
+            1,
+            184,
+            320
+          ],
+          "output_shapes": [
+            [
+              1,
+              65,
+              23,
+              40
+            ],
+            [
+              1,
+              256,
+              23,
+              40
+            ]
+          ],
+          "finite": true,
+          "output_sha256": [
+            "d9ec9ba146ccef236d0d1d20b9229c713d3cbf8b84c1e60395244ac876687eb3",
+            "0b1269c29ab2c7dcbd70acaa5d279566e4bb0e38e0d9a4d03e10877a65d13ed6"
+          ]
+        },
+        "seeded_random": {
+          "input_shape": [
+            1,
+            1,
+            184,
+            320
+          ],
+          "output_shapes": [
+            [
+              1,
+              65,
+              23,
+              40
+            ],
+            [
+              1,
+              256,
+              23,
+              40
+            ]
+          ],
+          "finite": true,
+          "output_sha256": [
+            "46f2e8945beec6ec9facbfa81806ae6ca4e9f8b75f188f77f0eb3cbc01500fef",
+            "35b5983a1bf771c8b5e13744978f9926f9bc419ebe50579ed13afeb0fb10d831"
+          ]
+        },
+        "zeros": {
+          "input_shape": [
+            1,
+            1,
+            184,
+            320
+          ],
+          "output_shapes": [
+            [
+              1,
+              65,
+              23,
+              40
+            ],
+            [
+              1,
+              256,
+              23,
+              40
+            ]
+          ],
+          "finite": true,
+          "output_sha256": [
+            "05520bea7ff41fe266e013398a9d6e7493b0992dee780bf5951d1507e12e32d0",
+            "d5c1d09c29a0e8c849aef5d93d037aaa09a9bff82a7f6cf0400856e8c241167e"
+          ]
+        }
+      }
+    }
+  },
+  "board_unknown": [
+    "camera sensor/firmware I/O",
+    "actual AI/general SRAM peak",
+    "latency/FPS",
+    "power",
+    "long-run stability",
+    "full online pose chain"
+  ],
+  "files": {
+    "contracts/mixvpr.json": {
+      "bytes": 716,
+      "sha256": "adc74374e568e7a981c00be4324986a9f89bf806e60516cb051ce62baa4f8916"
+    },
+    "contracts/superpoint_postprocess.json": {
+      "bytes": 589,
+      "sha256": "d23bb931ab8569219b55eaa34f7801e24917ba8d75706128cbcd0c91817dabaf"
+    },
+    "contracts/superpoint_preprocessing.json": {
+      "bytes": 1218,
+      "sha256": "adf624441af0b3ab3765e1d1f991689a048f6ef55a080a15c492313dbd3fcdc6"
+    },
+    "models/mixvpr_d4_240x240.kmodel": {
+      "bytes": 766632,
+      "sha256": "2a3e3eb6bab6c11faad06b29c86da740ed76219b50cacc2cce185a99d43c02a1"
+    },
+    "models/mixvpr_d4_240x240.onnx": {
+      "bytes": 2947490,
+      "sha256": "5581553b197472337946dd48ab55175a2711b5d8c12ee43f8bd5583feeac138d"
+    },
+    "models/superpoint_full_r2_cw.kmodel": {
+      "bytes": 1331368,
+      "sha256": "6baed98bc65211c195c888fad0440899ea3aa3f2eed5703ecb1242dc34c8db55"
+    },
+    "models/superpoint_full_r2_cw.onnx": {
+      "bytes": 5265533,
+      "sha256": "7b3aeb9010b3509580e91e25460f877c228c4ec8d8645e229984b525b9a9909d"
+    },
+    "test_vectors/mixvpr_linspace_input.npy": {
+      "bytes": 691328,
+      "sha256": "a33218cff4294a03ab74ba76cce5bf06db9af97eda187881c4bd125fd38042c8"
+    },
+    "test_vectors/mixvpr_linspace_normalized.npy": {
+      "bytes": 2176,
+      "sha256": "205b089f2c915b1bea1e5846381250a452f77a4fa9f8ff29aa9a40eccb6da3d4"
+    },
+    "test_vectors/mixvpr_linspace_raw.npy": {
+      "bytes": 2176,
+      "sha256": "a29db5825fc40a0fa60f99c0715368477009b048292ec26b55f425beed537dc9"
+    },
+    "test_vectors/mixvpr_seeded_random_input.npy": {
+      "bytes": 691328,
+      "sha256": "30e27c07f46b6c1ffd41fc5bedd7004c7cfe372b2e2e09b142248cd52e03aed7"
+    },
+    "test_vectors/mixvpr_seeded_random_normalized.npy": {
+      "bytes": 2176,
+      "sha256": "ff82d4b1322e5d44cabbe8e46f613c1e0469eebdfe1f8e8013be1ba81a6e1fdf"
+    },
+    "test_vectors/mixvpr_seeded_random_raw.npy": {
+      "bytes": 2176,
+      "sha256": "6884854b25dd1cabc3a4bf3595975e683e0ce3c16ffe1f3a5679cd70dc169c4c"
+    },
+    "test_vectors/mixvpr_zeros_input.npy": {
+      "bytes": 691328,
+      "sha256": "482594aeab50c0583a5ce71a27b452c68c21b895cec2bc3733b43f16d7be4bed"
+    },
+    "test_vectors/mixvpr_zeros_normalized.npy": {
+      "bytes": 2176,
+      "sha256": "945d63b21f959219514f19d11ae583b539d8e1238f4573159e537b7a9453714b"
+    },
+    "test_vectors/mixvpr_zeros_raw.npy": {
+      "bytes": 2176,
+      "sha256": "f33e6bbb42aa55704f737ffe70ab373a30810aeefe048ef29d7d73dbbc3c1de7"
+    },
+    "test_vectors/superpoint_linspace_descriptor_map.npy": {
+      "bytes": 942208,
+      "sha256": "0b1269c29ab2c7dcbd70acaa5d279566e4bb0e38e0d9a4d03e10877a65d13ed6"
+    },
+    "test_vectors/superpoint_linspace_detector_logits.npy": {
+      "bytes": 239328,
+      "sha256": "d9ec9ba146ccef236d0d1d20b9229c713d3cbf8b84c1e60395244ac876687eb3"
+    },
+    "test_vectors/superpoint_seeded_random_descriptor_map.npy": {
+      "bytes": 942208,
+      "sha256": "35b5983a1bf771c8b5e13744978f9926f9bc419ebe50579ed13afeb0fb10d831"
+    },
+    "test_vectors/superpoint_seeded_random_detector_logits.npy": {
+      "bytes": 239328,
+      "sha256": "46f2e8945beec6ec9facbfa81806ae6ca4e9f8b75f188f77f0eb3cbc01500fef"
+    },
+    "test_vectors/superpoint_zeros_descriptor_map.npy": {
+      "bytes": 942208,
+      "sha256": "d5c1d09c29a0e8c849aef5d93d037aaa09a9bff82a7f6cf0400856e8c241167e"
+    },
+    "test_vectors/superpoint_zeros_detector_logits.npy": {
+      "bytes": 239328,
+      "sha256": "05520bea7ff41fe266e013398a9d6e7493b0992dee780bf5951d1507e12e32d0"
+    }
+  }
+}
