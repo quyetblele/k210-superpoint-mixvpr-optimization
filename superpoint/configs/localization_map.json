@@ -1,0 +1,20 @@
+{
+  "map_id": "floor6_v1",
+  "model": "/home/quyet/edge_ai_project/map_packages/floor6_v1/colmap/refined_model_v2",
+  "assets": "/home/quyet/edge_ai_project/assets/floor6",
+  "artifact_dir": "artifacts/map_nms_gate_floor6_v1",
+  "data": "/home/quyet/k210_lab/superpoint/artifacts/map_replacement_floor6/data.json",
+  "geometry_backend": "spk210.map_geometry (native pycolmap RADIAL_FISHEYE)",
+  "status": "TEACHER_BASELINE_PASS_INTERNAL_DEV",
+  "geometry_hashes": {
+    "cameras.bin": "03a9419d7436059be3e957323aa9b91874d055821fdb78e351f1762b7249e25e",
+    "images.bin": "db613d98ee5786d4207753a3577ba2b6e0bdfacedecf3837a8b26a8205c3ba09",
+    "points3D.bin": "276125c9d098389c038dbdb9ed6bab21311b78b857d495dd6e3b0d8d2893d7a8"
+  },
+  "retired_map_ids": [
+    "stair_6_7_v1",
+    "stair_template_v1"
+  ],
+  "teacher_baseline": "/home/quyet/k210_lab/superpoint/artifacts/floor6_teacher_baseline/run_001",
+  "teacher_baseline_protocol_sha256": "b190840f96cdd286a5bb6636beca51dd526882a6358d223e1c51266dd6a69f90"
+}

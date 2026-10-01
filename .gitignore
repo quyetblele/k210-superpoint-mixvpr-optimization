@@ -12,3 +12,22 @@ third_party/*.whl
 
 .DS_Store
 Thumbs.db
+
+# Runtime environments, datasets and generated evidence stay on disk, outside Git.
+.venv-*/
+datasets/
+models/
+reports/
+superpoint/artifacts/
+superpoint/results/
+docs/audit/inventory.json.gz
+docs/audit/current_inventory.json.gz
+# Preserve experiment source/configuration; ignore bulky generated artifacts.
+*.onnx
+*.kmodel
+*.pt
+*.pth
+*.npy
+*.npz
+*.zip
+*.log

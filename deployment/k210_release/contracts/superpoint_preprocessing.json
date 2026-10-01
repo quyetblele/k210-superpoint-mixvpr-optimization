@@ -1,0 +1,52 @@
+{
+  "source": "grayscale uint8, divide255",
+  "common_letterbox_wh": [
+    288,
+    512
+  ],
+  "common_resize": "OpenCV INTER_AREA, aspect preserving, centered integer padding",
+  "network_content_wh": [
+    180,
+    320
+  ],
+  "logical_network_wh": [
+    184,
+    320
+  ],
+  "side_padding_px": 2,
+  "physical_input": "CW90, FP32[1,1,184,320]",
+  "logical_output_restore": "CCW90 plus inverse65-channel detector permutation",
+  "evaluation_coordinate": "(network_xy-[2,0])/1.25",
+  "test_seed": 20260919,
+  "test_pair_seed": "seed+100000+source_index",
+  "test_warp": "existing synthetic rotation +/-10deg, scale.92..1.08, translation +/-4canonical px; actual S H inv(S)",
+  "test_brightness": [
+    0.8,
+    1.2
+  ],
+  "heldout_count": 1000,
+  "test_scope": "redkitchen/seq-06 synthetic feature/matching, not heldout pose accuracy",
+  "identity": "SuperPoint-full_capacity_r2_cw-frozen",
+  "output": {
+    "detector_logits": [
+      1,
+      65,
+      23,
+      40
+    ],
+    "descriptor_map": [
+      1,
+      256,
+      23,
+      40
+    ],
+    "dtype": "float32",
+    "descriptor_dim": 256,
+    "stride": 8
+  },
+  "k210": {
+    "target": "k210",
+    "nncase": "1.8.0.20220929",
+    "_nncase": "1.8.0-55be52f"
+  }
+}

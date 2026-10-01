@@ -1,0 +1,74 @@
+{
+  "detector_control_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/detector_recovery/detector_control_r2_cw/best.pt",
+    "protocol": "artifacts/detector_recovery/protocol.json"
+  },
+  "detector_balanced_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/detector_recovery/detector_balanced_r2_cw/best.pt",
+    "protocol": "artifacts/detector_recovery/protocol.json"
+  },
+  "desc_control_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/descriptor_kd_ab/desc_control_r2_cw/best.pt",
+    "protocol": "artifacts/descriptor_kd_ab/protocol.json"
+  },
+  "desc_kd_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/descriptor_kd_ab/desc_kd_r2_cw/best.pt",
+    "protocol": "artifacts/descriptor_kd_ab/protocol.json"
+  },
+  "coord_current_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/coordinate_mapping_ab/coord_current_r2_cw/best.pt",
+    "protocol": "artifacts/coordinate_mapping_ab/protocol.json"
+  },
+  "coord_center_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/coordinate_mapping_ab/coord_center_r2_cw/best.pt",
+    "protocol": "artifacts/coordinate_mapping_ab/protocol.json"
+  },
+  "point_control_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/student_point_supervision_ab/point_control_r2_cw/best.pt",
+    "protocol": "artifacts/student_point_supervision_ab/protocol.json"
+  },
+  "point_geometry_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/student_point_supervision_ab/point_geometry_r2_cw/best.pt",
+    "protocol": "artifacts/student_point_supervision_ab/protocol.json"
+  },
+  "rank_control_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/detector_ranking_ab/rank_control_r2_cw/best.pt",
+    "protocol": "artifacts/detector_ranking_ab/protocol.json"
+  },
+  "rank_pairwise_r2_cw": {
+    "width": "wider",
+    "resolution": "r2",
+    "checkpoint": "artifacts/detector_ranking_ab/rank_pairwise_r2_cw/best.pt",
+    "protocol": "artifacts/detector_ranking_ab/protocol.json"
+  },
+  "full_capacity_r2_cw": {
+    "width": "wider",
+    "widths": [
+      24,
+      64,
+      128,
+      192
+    ],
+    "resolution": "r2",
+    "checkpoint": "artifacts/full_training/best.pt",
+    "protocol": "artifacts/full_training/protocol.json"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "name": "mixvpr_v2_p4k2_sampler_ablation",
+  "seed": 20260920,
+  "goal": "maximize retrieval quality subject to K210 feasibility",
+  "hypotheses": {
+    "00_large": "function-preserving W4/W5/H widening creates usable extra capacity without losing the frozen D4 starting function",
+    "01_prune_w5": "W5 192->176 contains recoverable redundancy under teacher and parent KD",
+    "02_prune_w4": "W4 128->120 contains recoverable redundancy after W5 recovery",
+    "03_prune_h": "mixer hidden 128->112 can reduce cost with recoverable retrieval loss",
+    "04_prune_w5": "W5 176->160 can cross toward the K210 boundary while preserving strong retrieval quality",
+    "05_prune_w4": "W4 120->112 can reduce the late backbone further without unacceptable DEV loss",
+    "06_prune_h": "mixer hidden 112->96 can reach frozen-D4 geometry while retaining the best recoverable quality"
+  },
+  "invariants": {
+    "input_hw": [
+      240,
+      240
+    ],
+    "early_widths": [
+      16,
+      24,
+      64
+    ],
+    "mixer_depth": 4,
+    "tokens": 100,
+    "projection": 128,
+    "descriptor_dim": 512
+  },
+  "stages": [
+    {
+      "id": "00_large",
+      "w4": 128,
+      "w5": 192,
+      "hidden": 128,
+      "action": "train_from_teacher"
+    },
+    {
+      "id": "01_prune_w5",
+      "w4": 128,
+      "w5": 176,
+      "hidden": 128,
+      "action": "prune_w5"
+    },
+    {
+      "id": "02_prune_w4",
+      "w4": 120,
+      "w5": 176,
+      "hidden": 128,
+      "action": "prune_w4"
+    },
+    {
+      "id": "03_prune_h",
+      "w4": 120,
+      "w5": 176,
+      "hidden": 112,
+      "action": "prune_hidden"
+    },
+    {
+      "id": "04_prune_w5",
+      "w4": 120,
+      "w5": 160,
+      "hidden": 112,
+      "action": "prune_w5"
+    },
+    {
+      "id": "05_prune_w4",
+      "w4": 112,
+      "w5": 160,
+      "hidden": 112,
+      "action": "prune_w4"
+    },
+    {
+      "id": "06_prune_h",
+      "w4": 112,
+      "w5": 160,
+      "hidden": 96,
+      "action": "prune_hidden"
+    }
+  ],
+  "training": {
+    "parent_probe_updates": 1000,
+    "parent_max_updates": 6000,
+    "recovery_max_updates": 1500,
+    "eval_interval": 250,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "eta_min": 3e-06,
+    "accumulation": 4,
+    "task_weight": 1.0,
+    "teacher_kd_weight": 1.0,
+    "parent_kd_weight": 0.5
+  },
+  "compression": {
+    "importance": "combined_l2_weight_norm",
+    "one_axis_per_stage": true,
+    "stop_rule": "stop at first strong Pareto point that passes K210 gates; do not force final compact stage"
+  },
+  "feasibility": {
+    "compiler_total_max_bytes": 3145728,
+    "require_cpu_conv": 0,
+    "require_simulator": true
+  },
+  "data": {
+    "metadata": "/mnt/d/k210_official_ab/data.json",
+    "teacher_bank_manifest": "/mnt/d/k210_official_ab/official_bank/manifest.json",
+    "teacher_bank": "/mnt/d/k210_official_ab/official_bank/descriptors_f16.npy",
+    "calibration": "/home/quyet/training_recovery/final_gate2/calibration_train_f32.npy",
+    "teacher_checkpoint": "/home/quyet/training_recovery/full/teacher_frozen/teacher.pt"
+  },
+  "protected_baseline": {
+    "freeze_manifest": "mixvpr/artifacts/d4_final_candidate/freeze_manifest.json",
+    "frozen_d4_checkpoint": "/home/quyet/training_recovery/final_gate2/candidate.pt",
+    "teacher_student_test": "/mnt/d/k210_benchmarks/pitts30k_test/teacher_student_artifacts/results.json"
+  },
+  "sampler": {
+    "mode": "p4k2",
+    "project_probability": 0.1,
+    "neighbor_pool": 16
+  }
+}

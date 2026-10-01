@@ -1,44 +1,52 @@
-# K210 deployment lab
+# K210 Edge AI workspace
 
-## Gate 1: minimal static ONNX graph
+Đang làm **SuperPoint → trained FP32 → ONNX → 8-bit PTQ → K210**, với SuperPoint là reference implementation đầu tiên. Mục tiêu là chất lượng hữu ích trong giới hạn phần cứng, có bằng chứng ở từng gate.
 
-Gate 1 proves that the pinned environment can create and inspect a simple,
-static FP32 ONNX graph before any K210 `.kmodel` compilation. The environment
-is Python 3.8.20, nncase 1.8.0.20220929 (`_nncase` 1.8.0-55be52f), and ONNX
-1.14.1.
+- [Workflow và command chuẩn](docs/WORKFLOW.md)
+- [Đường đọc code để học từ đầu đến cuối](docs/CODE_READING_GUIDE.md)
+- [K210/toolchain/CPU–KPU notes](docs/K210_NOTES.md)
+- [Audit và thay đổi workspace](docs/WORKSPACE_AUDIT.md)
+- [SuperPoint](superpoint/README.md)
 
-Create the model:
-
-```bash
-/home/quyet/miniconda3/bin/conda run -n k210 python scripts/create_tiny_onnx.py
-```
-
-Inspect and validate it:
+Bắt đầu tại đây:
 
 ```bash
-/home/quyet/miniconda3/bin/conda run -n k210 python scripts/inspect_onnx.py
+cd /home/quyet/k210_lab
+./superpoint/run status
+./superpoint/run check
 ```
 
-Expected PASS criteria: `models/tiny_fp32.onnx` exists; the ONNX checker
-passes; input is `input` FP32 `[1, 3, 32, 32]`; output is `output` FP32
-`[1, 8, 32, 32]`; the graph contains only two `Conv` and two `Relu` nodes;
-and it has no dynamic shapes or custom operators.
+Ưu tiên hiện tại: đọc [trạng thái thực nghiệm](docs/EXPERIMENT_STATUS.md). Gate đo phân rã giữ nguyên student/MixVPR, chưa cho phép mở training mới. `check` PASS là kiểm tra implementation, không phải điều kiện đủ để train tiếp hoặc promote model.
 
-## Gate 2: nncase K210 compiler path
+Tái chạy gate vào thư mục mới: `./superpoint/run measure --output superpoint/artifacts/measurement_gate/NEW_RUN_NAME`. Các command pilot phía dưới được giữ để tái lập lịch sử; không dùng chúng thay cho benchmark công khai hoặc TEST độc lập.
 
-Gate 2 imports the Gate 1 model, runs nncase v1 PTQ, and produces a K210
-`.kmodel` on the PC. It does not run the model on hardware. The calibration
-set is deterministic synthetic FP32 data for a compiler smoke test only; a
-real model requires representative calibration data.
-
-```bash
-/home/quyet/miniconda3/bin/conda run -n k210 python scripts/infer_tiny_onnx_shapes.py
-/home/quyet/miniconda3/bin/conda run -n k210 python scripts/compile_tiny_k210.py
+```text
+k210_lab/
+├── README.md
+├── docs/                     # workflow, code guide, audit, K210 notes
+├── superpoint/
+│   ├── run                   # launcher nhỏ, chọn đúng Python environment
+│   ├── configs/              # frozen pilot protocol
+│   ├── src/spk210/           # implementation chuẩn theo trách nhiệm
+│   ├── scripts/              # một entrypoint cho mỗi bước
+│   ├── deployment/k210/      # I/O contract và board gate
+│   ├── artifacts/            # cache, checkpoints, ONNX, kmodel, evidence
+│   └── results/              # log vận hành và kiểm tra
+├── mixvpr/                   # frozen model pointer; chưa refactor/train lại
+├── online/                   # real-map/localization PC integration đang giữ
+├── datasets/                 # dữ liệu giữ nguyên
+├── tools/                    # audit/environment utilities
+├── archive/                  # tài liệu lịch sử đã chuyển
+├── experiments/              # lịch sử nghiên cứu, archive tại chỗ
+├── scripts/                  # legacy scripts và shared helper còn phụ thuộc
+├── models/, reports/         # model/benchmark lịch sử giữ nguyên
+└── .venv-mixvpr-cuda/         # môi trường đã có, không đưa vào Git
 ```
 
-The first command serializes ONNX shape-inference metadata to
-`models/tiny_fp32_inferred.onnx`; the original Gate 1 model is unchanged.
-The compiler imports that inferred model using uint8 PTQ, then writes
-`artifacts/tiny.kmodel`. This workflow passed with a non-empty K210 kmodel;
-`reports/gate2_summary.md` records its size and SHA256. Compiler dumps are
-written to `reports/gate2_nncase/`.
+Output chuẩn: `superpoint/artifacts/quality_pilot/` và `superpoint/artifacts/deployment/<candidate>/`. Checkpoint ở từng candidate, không copy thêm sang một thư mục khác gây lệch identity.
+
+MixVPR sẽ reuse workflow và cách quản lý identity/evidence sau khi SuperPoint hoàn thành; checkpoint frozen hiện tại vẫn được giữ. Không coi refactor workspace là lý do train lại MixVPR.
+
+**Trạng thái board:** package/compile/simulator không đồng nghĩa đã chạy K210. Latency và peak SRAM thực phải đo trên board; xem `superpoint/deployment/k210/README.md`.
+
+Vòng tiếp theo đã hoàn thành: [Detector recovery A/B và chẩn đoán INT8](superpoint/artifacts/detector_recovery/REPORT.md). Cả training recipe thử nghiệm và exact-score tie remedy đều không qua gate; chưa promotion model mới.

@@ -1,0 +1,23 @@
+{
+  "process_every": 1,
+  "retrieval_every": 5,
+  "top_k": 3,
+  "max_active_images": 8,
+  "max_active_points": 600,
+  "max_keypoints": 160,
+  "max_matches": 120,
+  "match_block": 64,
+  "retrieval_block": 64,
+  "similarity_threshold": 0.8,
+  "similarity_margin": 0.05,
+  "min_inliers": 8,
+  "pnp_error_px": 4.0,
+  "camera_size": [
+    1080,
+    1920
+  ],
+  "superpoint_size": [
+    360,
+    640
+  ]
+}

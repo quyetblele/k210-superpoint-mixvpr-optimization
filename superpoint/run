@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+set -euo pipefail
+sp_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+torch_python="${SP_TORCH_PYTHON:-$sp_root/../.venv-mixvpr-cuda/bin/python}"
+nncase_python="${SP_NNCASE_PYTHON:-/home/quyet/miniconda3/envs/k210/bin/python}"
+stage="${1:-status}"
+if (($#)); then shift; fi
+case "$stage" in
+  prepare) script=prepare.py ;;
+  train) script=train.py ;;
+  export) script=export_onnx.py ;;
+  validate) script=validate_onnx.py ;;
+  calibrate) script=prepare_calibration.py ;;
+  compile) script=compile_k210.py; torch_python="$nncase_python" ;;
+  simulate) script=simulate_k210.py; torch_python="$nncase_python" ;;
+  evaluate) script=evaluate_int8.py ;;
+  diagnose) script=diagnose_quantization.py ;;
+  diagnose-peaks) script=diagnose_peaks.py ;;
+  evaluate-ties) script=evaluate_ties.py ;;
+  recover-detector) script=recover_detector.py ;;
+  evaluate-recovery) script=evaluate_recovery.py ;;
+  benchmark) script=benchmark.py ;;
+  package) script=package_deployment.py ;;
+  board) script=board.py ;;
+  check) script=check.py ;;
+  status) script=status.py ;;
+  measure) script=measurement_gate.py ;;
+  descriptor-pnp) script=fixed_keypoint_pnp.py ;;
+  keypoint-audit) script=keypoint_cause_audit.py ;;
+  *) echo 'Stages: status measure descriptor-pnp keypoint-audit check prepare train export validate calibrate compile simulate evaluate diagnose diagnose-peaks evaluate-ties recover-detector evaluate-recovery benchmark package board' >&2; exit 2 ;;
+esac
+export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2
+exec "$torch_python" "$sp_root/scripts/$script" "$@"

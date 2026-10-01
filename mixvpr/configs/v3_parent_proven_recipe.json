@@ -1,0 +1,198 @@
+{
+  "name": "mixvpr_v3_parent_proven_recipe",
+  "seed": 20260921,
+  "goal": "maximize DEV R@1 while shrinking one student lineage to K210 feasibility",
+  "hypotheses": {
+    "00_large": "W3/W4/W5/H overprovisioning can learn useful capacity above frozen D4",
+    "01_w5_208": "W5 224->208 removes low-value late channels with recoverable R@1",
+    "02_w5_192": "W5 208->192 remains recoverable",
+    "03_w5_176": "W5 192->176 remains on a useful Pareto frontier",
+    "04_w5_160": "W5 176->160 reaches the frozen-D4 W5 boundary",
+    "05_w4_144": "W4 160->144 removes low-value channels after W5 compression",
+    "06_w4_128": "W4 144->128 remains recoverable",
+    "07_w4_120": "W4 128->120 remains useful",
+    "08_w4_112": "W4 120->112 reaches the frozen-D4 W4 boundary",
+    "09_w3_72": "W3 80->72 is worth pruning only if DEV R@1 cost is small",
+    "10_w3_64": "W3 72->64 reaches the frozen-D4 W3 boundary if recovery succeeds",
+    "11_h_144": "H 160->144 removes redundant mixer neurons",
+    "12_h_128": "H 144->128 remains recoverable",
+    "13_h_112": "H 128->112 remains useful",
+    "14_h_96": "H 112->96 reaches frozen-D4 geometry if quality survives"
+  },
+  "invariants": {
+    "input_hw": [
+      240,
+      240
+    ],
+    "early_widths": [
+      16,
+      24
+    ],
+    "mixer_depth": 4,
+    "tokens": 100,
+    "projection": 128,
+    "descriptor_dim": 512
+  },
+  "stages": [
+    {
+      "id": "00_large",
+      "w3": 80,
+      "w4": 160,
+      "w5": 224,
+      "hidden": 160,
+      "action": "train_from_teacher"
+    },
+    {
+      "id": "01_w5_208",
+      "w3": 80,
+      "w4": 160,
+      "w5": 208,
+      "hidden": 160,
+      "action": "prune_w5"
+    },
+    {
+      "id": "02_w5_192",
+      "w3": 80,
+      "w4": 160,
+      "w5": 192,
+      "hidden": 160,
+      "action": "prune_w5"
+    },
+    {
+      "id": "03_w5_176",
+      "w3": 80,
+      "w4": 160,
+      "w5": 176,
+      "hidden": 160,
+      "action": "prune_w5"
+    },
+    {
+      "id": "04_w5_160",
+      "w3": 80,
+      "w4": 160,
+      "w5": 160,
+      "hidden": 160,
+      "action": "prune_w5"
+    },
+    {
+      "id": "05_w4_144",
+      "w3": 80,
+      "w4": 144,
+      "w5": 160,
+      "hidden": 160,
+      "action": "prune_w4"
+    },
+    {
+      "id": "06_w4_128",
+      "w3": 80,
+      "w4": 128,
+      "w5": 160,
+      "hidden": 160,
+      "action": "prune_w4"
+    },
+    {
+      "id": "07_w4_120",
+      "w3": 80,
+      "w4": 120,
+      "w5": 160,
+      "hidden": 160,
+      "action": "prune_w4"
+    },
+    {
+      "id": "08_w4_112",
+      "w3": 80,
+      "w4": 112,
+      "w5": 160,
+      "hidden": 160,
+      "action": "prune_w4"
+    },
+    {
+      "id": "09_w3_72",
+      "w3": 72,
+      "w4": 112,
+      "w5": 160,
+      "hidden": 160,
+      "action": "prune_w3"
+    },
+    {
+      "id": "10_w3_64",
+      "w3": 64,
+      "w4": 112,
+      "w5": 160,
+      "hidden": 160,
+      "action": "prune_w3"
+    },
+    {
+      "id": "11_h_144",
+      "w3": 64,
+      "w4": 112,
+      "w5": 160,
+      "hidden": 144,
+      "action": "prune_hidden"
+    },
+    {
+      "id": "12_h_128",
+      "w3": 64,
+      "w4": 112,
+      "w5": 160,
+      "hidden": 128,
+      "action": "prune_hidden"
+    },
+    {
+      "id": "13_h_112",
+      "w3": 64,
+      "w4": 112,
+      "w5": 160,
+      "hidden": 112,
+      "action": "prune_hidden"
+    },
+    {
+      "id": "14_h_96",
+      "w3": 64,
+      "w4": 112,
+      "w5": 160,
+      "hidden": 96,
+      "action": "prune_hidden"
+    }
+  ],
+  "training": {
+    "parent_probe_updates": 2000,
+    "parent_max_updates": 6000,
+    "recovery_max_updates": 1000,
+    "eval_interval": 250,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "eta_min": 3e-06,
+    "accumulation": 4,
+    "task_weight": 1.0,
+    "teacher_kd_weight": 1.0,
+    "parent_kd_weight": 0.5
+  },
+  "compression": {
+    "importance": "combined_l2_weight_norm",
+    "one_axis_per_stage": true,
+    "w3_gate": "after 08_w4_112, keep W3 pruning only when recovered DEV R@1 tradeoff is acceptable",
+    "stop_rule": "stop at first strong Pareto point that passes K210 gates; do not force 14_h_96"
+  },
+  "feasibility": {
+    "compiler_total_max_bytes": 3145728,
+    "require_cpu_conv": 0,
+    "require_simulator": true
+  },
+  "data": {
+    "metadata": "/mnt/d/k210_official_ab/data.json",
+    "teacher_bank_manifest": "/mnt/d/k210_official_ab/official_bank/manifest.json",
+    "teacher_bank": "/mnt/d/k210_official_ab/official_bank/descriptors_f16.npy",
+    "calibration": "/home/quyet/training_recovery/final_gate2/calibration_train_f32.npy",
+    "teacher_checkpoint": "/home/quyet/training_recovery/full/teacher_frozen/teacher.pt"
+  },
+  "protected_baseline": {
+    "freeze_manifest": "mixvpr/artifacts/d4_final_candidate/freeze_manifest.json",
+    "frozen_d4_checkpoint": "/home/quyet/training_recovery/final_gate2/candidate.pt",
+    "teacher_student_test": "/mnt/d/k210_benchmarks/pitts30k_test/teacher_student_artifacts/results.json"
+  },
+  "sampler": {
+    "mode": "p2k4",
+    "project_probability": 0.1
+  }
+}

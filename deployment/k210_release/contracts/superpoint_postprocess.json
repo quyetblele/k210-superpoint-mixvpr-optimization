@@ -1,0 +1,15 @@
+{
+  "nms": "greedy",
+  "implementation": "/home/quyet/k210_lab/superpoint/src/spk210/postprocess.py",
+  "radius_network_px": 4,
+  "radius_metric": "Chebyshev square",
+  "score_threshold": 0.005,
+  "score_comparison": ">",
+  "top_k": 160,
+  "tie_break": "descending score then y then x",
+  "descriptor_dim": 256,
+  "descriptor_stride": 8,
+  "dense_and_sampled_descriptor_normalization": "existing SuperGlue sample_descriptors and L2 normalization",
+  "mask_erode_network_px": 5,
+  "sampling_code": "/home/quyet/edge_ai_project/third_party/SuperGluePretrainedNetwork/models/superpoint.py"
+}

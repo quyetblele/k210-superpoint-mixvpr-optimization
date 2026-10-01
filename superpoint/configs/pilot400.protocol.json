@@ -1,0 +1,3760 @@
+{
+  "status": "FROZEN_BEFORE_RUN",
+  "seed": 20260919,
+  "updates_each": 400,
+  "eval_steps": [
+    0,
+    100,
+    200,
+    300,
+    400
+  ],
+  "widths": {
+    "fr12": [
+      12,
+      24,
+      32,
+      64
+    ],
+    "wider": [
+      24,
+      32,
+      64,
+      96
+    ]
+  },
+  "resolutions": {
+    "r1": [
+      144,
+      256,
+      1.0,
+      0
+    ],
+    "r2": [
+      184,
+      320,
+      1.25,
+      2
+    ]
+  },
+  "head_hidden": 128,
+  "outputs": [
+    65,
+    256
+  ],
+  "rows": {
+    "train": [
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-01/frame-000000.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-01",
+        "frame": 0,
+        "center": [
+          -0.12323361,
+          -1.1206967,
+          -0.98870575
+        ],
+        "view": [
+          0.03151003792014594,
+          0.19212321814899636,
+          0.9808648156389055
+        ],
+        "sha256": "26ed025cd2ed99dc4cdb899d9d0724b3eacfe9b3ff66c746bf02f309d9b1a929",
+        "place": "7scenes:chess:0:-2:-2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-01/frame-000267.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-01",
+        "frame": 267,
+        "center": [
+          0.46517009,
+          -0.82085472,
+          0.53436136
+        ],
+        "view": [
+          -0.33185431237007074,
+          0.75997302855687,
+          0.5588503477922212
+        ],
+        "sha256": "7c430abff127387190896fd1c8f7943e0bb43a50d210f26938d2c4364e489c8a",
+        "place": "7scenes:chess:1:-2:1:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-01/frame-000534.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-01",
+        "frame": 534,
+        "center": [
+          1.0817473,
+          -0.88395524,
+          0.79548758
+        ],
+        "view": [
+          -0.9567456565450628,
+          0.2003303860416018,
+          0.21096323165561248
+        ],
+        "sha256": "fc1bb1b14e07697e2de29244f63cc6f4a6e59129fc9af6e5d476f26f1e7353ef",
+        "place": "7scenes:chess:2:-2:2:-2:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-01/frame-000800.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-01",
+        "frame": 800,
+        "center": [
+          -0.35070264,
+          -0.71191829,
+          1.384377
+        ],
+        "view": [
+          0.5403400385599936,
+          0.472094962569719,
+          0.6965335519881869
+        ],
+        "sha256": "97c9c77e40b4ad2981716bd4fec7780e7fd39c719ca0e54af4d330f2cd45ccb4",
+        "place": "7scenes:chess:-1:-1:3:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-02/frame-000067.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-02",
+        "frame": 67,
+        "center": [
+          -0.51967233,
+          -0.46223685,
+          0.024931354
+        ],
+        "view": [
+          0.5483846386943442,
+          0.4445209237955369,
+          0.708290502796724
+        ],
+        "sha256": "1289bac0f5f9d89620def5b70b6f149a99e73e07d1b2dda5589385b43b279372",
+        "place": "7scenes:chess:-1:-1:0:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-02/frame-000333.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-02",
+        "frame": 333,
+        "center": [
+          -0.40253681,
+          -0.55095297,
+          0.14225684
+        ],
+        "view": [
+          -0.1431689060312278,
+          0.44347860524756855,
+          0.8847764638785849
+        ],
+        "sha256": "2fce83b6a01678c7d5098f5005f4a83d5228cf25a6d17630590d318c5edca183",
+        "place": "7scenes:chess:-1:-1:0:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-02/frame-000600.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-02",
+        "frame": 600,
+        "center": [
+          0.94638473,
+          -0.94191366,
+          0.20016916
+        ],
+        "view": [
+          -0.30250215533847724,
+          0.15990195090156006,
+          0.9396402567543873
+        ],
+        "sha256": "b10369d31e2b13b903961b5afed00548d0d4da25596f707f8e8e7ebb57028338",
+        "place": "7scenes:chess:2:-2:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-02/frame-000866.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-02",
+        "frame": 866,
+        "center": [
+          0.40733573,
+          -0.48299539,
+          0.86493647
+        ],
+        "view": [
+          -0.6234692877704823,
+          0.5784096246546213,
+          0.5260497631535135
+        ],
+        "sha256": "9ae8295ba56cfe2d5daf3034b6736d1427866d4d3e15e2e226c9eb3c1fffc046",
+        "place": "7scenes:chess:1:-1:2:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-04/frame-000133.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-04",
+        "frame": 133,
+        "center": [
+          0.66647565,
+          -0.86737251,
+          0.35140955
+        ],
+        "view": [
+          -0.34850610213434746,
+          0.22956642245229997,
+          0.9087589088738421
+        ],
+        "sha256": "aa6ed3d0fdfdadaa1432e84ff09f3d6513656becfe1dda36b5e0fbc7c41d63eb",
+        "place": "7scenes:chess:1:-2:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-04/frame-000399.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-04",
+        "frame": 399,
+        "center": [
+          0.14933038,
+          -0.75961697,
+          1.0725709
+        ],
+        "view": [
+          -0.003081856657570821,
+          0.7440680019000598,
+          0.6680967824409834
+        ],
+        "sha256": "94d59b59abf5312d6926c150b1b81f9bfacb2e8c5d02c3d0cdb561f2de62a4e8",
+        "place": "7scenes:chess:0:-2:2:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-04/frame-000666.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-04",
+        "frame": 666,
+        "center": [
+          0.36295176,
+          -0.74059957,
+          -1.0583713
+        ],
+        "view": [
+          -0.291239624637363,
+          0.15966476587390865,
+          0.9432320200139083
+        ],
+        "sha256": "b39586df946a9df7cf169d1ab14c52ddf5559116700d68a088f99ae5950794ce",
+        "place": "7scenes:chess:1:-1:-2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-04/frame-000932.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-04",
+        "frame": 932,
+        "center": [
+          1.5347263,
+          -0.92036754,
+          0.6920495
+        ],
+        "view": [
+          -0.7755829995420649,
+          0.4966167628486406,
+          0.3896701190482411
+        ],
+        "sha256": "b7e72441256bad2b5dc4115fdd1d9dedc52eb44a34714d0f35e8ce6656dfe0a3",
+        "place": "7scenes:chess:3:-2:1:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-06/frame-000199.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-06",
+        "frame": 199,
+        "center": [
+          0.20932858,
+          -0.75403923,
+          0.54823869
+        ],
+        "view": [
+          -0.518329380125411,
+          0.3341603375557654,
+          0.7871921763479512
+        ],
+        "sha256": "c8061b2b4118b203b2e89aea33330964df19eac948c56c35012cf45be3dcba3b",
+        "place": "7scenes:chess:0:-2:1:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-06/frame-000465.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-06",
+        "frame": 465,
+        "center": [
+          1.1002785,
+          -0.33597192,
+          0.89660168
+        ],
+        "view": [
+          -0.6216099661702624,
+          0.32420096833189793,
+          0.7130882007791637
+        ],
+        "sha256": "60ab387b6a3032047ebf086a1030bf3bf3ca803d02bb941ca26dfa7135116d8b",
+        "place": "7scenes:chess:2:-1:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-06/frame-000732.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-06",
+        "frame": 732,
+        "center": [
+          0.070146956,
+          -0.83547205,
+          -0.1978506
+        ],
+        "view": [
+          -0.059436710631808894,
+          0.539055137776622,
+          0.8401707182864073
+        ],
+        "sha256": "fa06c5a46e9bc47fbe5305ed145026778c939f5cdafcec479e7fca32dea92da1",
+        "place": "7scenes:chess:0:-2:0:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-06/frame-000999.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-06",
+        "frame": 999,
+        "center": [
+          1.2402633,
+          -0.61654419,
+          0.58533549
+        ],
+        "view": [
+          -0.928735761934569,
+          0.14891162685813455,
+          0.33952203446945745
+        ],
+        "sha256": "823ffc3377c602ac9fddf8b65567ab9b40064b2e6fe09a238e91a6e18229407f",
+        "place": "7scenes:chess:2:-1:1:-2:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000000.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 0,
+        "center": [
+          -0.22585712,
+          -0.29204991,
+          0.2855311
+        ],
+        "view": [
+          -0.06734714965580739,
+          0.386691109372423,
+          0.919746893099163
+        ],
+        "sha256": "fa0b7bf782e667849fbd561930b09bcc38e5552bceab01517231b306397f4cce",
+        "place": "7scenes:fire:0:-1:1:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000132.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 132,
+        "center": [
+          -0.99069101,
+          -0.71337742,
+          0.83135813
+        ],
+        "view": [
+          0.4801804302534078,
+          0.3402962075885515,
+          0.8084709305240985
+        ],
+        "sha256": "55e9a00d24315500540640e53fe1849902cb027318d737ae99bd587bb1910e8e",
+        "place": "7scenes:fire:-2:-1:2:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000278.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 278,
+        "center": [
+          -0.17136084,
+          -0.53136665,
+          0.46889678
+        ],
+        "view": [
+          -0.017263634559656182,
+          0.6086854758691732,
+          0.7932237757327429
+        ],
+        "sha256": "aa30cd8df88bea91010efdd95cb9b79536e30059a0be9ae147343c352e81b812",
+        "place": "7scenes:fire:0:-1:1:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000412.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 412,
+        "center": [
+          1.3052257,
+          -0.59358805,
+          0.72024912
+        ],
+        "view": [
+          -0.7614030012912779,
+          0.5283571061329941,
+          0.37563844055607787
+        ],
+        "sha256": "aba56e74011fecdeb16e5560a98430ada6b9173bcd0ab72876899060160740d0",
+        "place": "7scenes:fire:3:-1:1:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000541.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 541,
+        "center": [
+          0.53747731,
+          -0.7231434,
+          1.2013539
+        ],
+        "view": [
+          -0.6147137931345422,
+          0.6231604404771286,
+          0.4835266465816484
+        ],
+        "sha256": "5b31fbd196787061e90b0cd084eecc009f742dcd68660552cf9cdf98e59054f2",
+        "place": "7scenes:fire:1:-1:2:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000670.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 670,
+        "center": [
+          0.98491001,
+          -0.54960275,
+          0.47214991
+        ],
+        "view": [
+          -0.4749429841852349,
+          0.45451257319903654,
+          0.7535565556593706
+        ],
+        "sha256": "730dc49bb7ddc296fdb6471d7f23417de5ed1de551a8d700a63d1e360163457b",
+        "place": "7scenes:fire:2:-1:1:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000799.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 799,
+        "center": [
+          0.72482485,
+          -0.42109674,
+          1.0019768
+        ],
+        "view": [
+          -0.7529232470877785,
+          0.5566356693041068,
+          0.3510887575146279
+        ],
+        "sha256": "57554249cee993ac4fba10c13aaf465aac4d5bfbb248c6c7897d9bed78ce4ddf",
+        "place": "7scenes:fire:1:-1:2:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-01/frame-000928.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-01",
+        "frame": 928,
+        "center": [
+          0.36174431,
+          -0.70648998,
+          0.97357076
+        ],
+        "view": [
+          -0.8432414387643604,
+          0.4535480620035377,
+          0.28851001958934874
+        ],
+        "sha256": "7e290d2c21bb862a4f9deacef295bfeb5e301c405a9dbe02ef539bd15a4cf04b",
+        "place": "7scenes:fire:1:-1:2:-2:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000057.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 57,
+        "center": [
+          -0.26454061,
+          0.026977053,
+          0.42725506
+        ],
+        "view": [
+          -0.017809080605359243,
+          0.20231343168667432,
+          0.9791588798592153
+        ],
+        "sha256": "cb5f911d8487423d6573e440d1a49b8ebe369f5be9b254e6e4362cdc8e4717d8",
+        "place": "7scenes:fire:-1:0:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000196.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 196,
+        "center": [
+          -0.42072117,
+          -0.081490166,
+          0.42656782
+        ],
+        "view": [
+          0.45653073680775236,
+          0.22882761043254418,
+          0.8597776521016947
+        ],
+        "sha256": "884c5b5fa90bfa2e2a1c8d81986e65dc853ddc59504724965e400c3225ab052c",
+        "place": "7scenes:fire:-1:0:1:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000325.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 325,
+        "center": [
+          -0.82550269,
+          0.043092802,
+          0.67996174
+        ],
+        "view": [
+          0.06604510819521996,
+          0.13383575721509483,
+          0.9888003002498249
+        ],
+        "sha256": "9a3b67229c3ae7e4b2eb67ec71c8b10ba7b62a76015a30571b7be71a747d5bf4",
+        "place": "7scenes:fire:-2:0:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000458.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 458,
+        "center": [
+          -0.094838612,
+          -0.66516203,
+          0.3428461
+        ],
+        "view": [
+          0.007538612450984527,
+          0.5969417111674669,
+          0.8022491899595602
+        ],
+        "sha256": "7c8b566692dec3084ce4e06faacf221cab586e24ffbe0fa9735a17837312587d",
+        "place": "7scenes:fire:0:-1:1:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000602.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 602,
+        "center": [
+          -0.10317673,
+          -0.42810139,
+          1.0495117
+        ],
+        "view": [
+          -0.002836712238570739,
+          0.39874245321299495,
+          0.9170585635985076
+        ],
+        "sha256": "45256d0b959fe5142a059ed99b2ce28584992d3b881b91208b7b9e013dca771f",
+        "place": "7scenes:fire:0:-1:2:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000741.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 741,
+        "center": [
+          -0.73271996,
+          -0.24535455,
+          0.76888978
+        ],
+        "view": [
+          0.6132362715534013,
+          0.26720104220057145,
+          0.7433336251631641
+        ],
+        "sha256": "6743c39cd178a2de8ab4307d64c565069b636f9d5d034d7f65c25cd707abde63",
+        "place": "7scenes:fire:-1:0:2:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000870.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 870,
+        "center": [
+          0.10026456,
+          -0.40731522,
+          0.4201102
+        ],
+        "view": [
+          -0.2722203973609076,
+          0.37992281041548237,
+          0.8840558316003978
+        ],
+        "sha256": "dcb770716a4243008d759994e5ad065befbe43d6bf9fa951f7dc5c301ec0e2fe",
+        "place": "7scenes:fire:0:-1:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-02/frame-000999.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-02",
+        "frame": 999,
+        "center": [
+          1.2499332,
+          -0.4037863,
+          0.87936306
+        ],
+        "view": [
+          -0.9053245137101557,
+          0.2854404299330342,
+          0.31450164679237336
+        ],
+        "sha256": "c77123cdf9297d746618626286bd7d127b8ea482b44c37683769a6dba0f82e32",
+        "place": "7scenes:fire:2:-1:2:-2:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000000.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 0,
+        "center": [
+          0.095729552,
+          -0.04108211,
+          0.13248709
+        ],
+        "view": [
+          0.05501200742910036,
+          0.16361039528216567,
+          0.984990008880412
+        ],
+        "sha256": "a34fbd4129619a334101c03735192a56fd8c875aaf75fe0c4fe4e24ea68108a1",
+        "place": "7scenes:heads:0:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000075.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 75,
+        "center": [
+          0.45815825,
+          -0.14191152,
+          -0.070913211
+        ],
+        "view": [
+          0.17626032549651588,
+          0.1959279723243282,
+          0.964647359047201
+        ],
+        "sha256": "845bd9030a6af40e591dc3f505a733335a8e00a8fdf66b35ea779fa746d63ae3",
+        "place": "7scenes:heads:1:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000150.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 150,
+        "center": [
+          0.87326849,
+          -0.25290325,
+          -0.0059354641
+        ],
+        "view": [
+          -0.3907801108693747,
+          0.27966072308067574,
+          0.8769725109231833
+        ],
+        "sha256": "bf7c74f85464f4d70db64a6496afb4441dfeb6270b287aec98a7304d766efa72",
+        "place": "7scenes:heads:2:-1:0:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000212.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 212,
+        "center": [
+          0.52300704,
+          -0.47136566,
+          0.045584179
+        ],
+        "view": [
+          0.18818500007293779,
+          0.6156108594265498,
+          0.7652513805957185
+        ],
+        "sha256": "5c3cbddda5c155907f9345b5d1958fcd0adc7971394dc4611a484b2b941844bf",
+        "place": "7scenes:heads:1:-1:0:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000273.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 273,
+        "center": [
+          0.18449692,
+          -0.18909402,
+          0.29742488
+        ],
+        "view": [
+          0.44726318318898095,
+          0.13773807527065096,
+          0.8837329164314275
+        ],
+        "sha256": "7e19a188f59689849546c5919eea6405e6bfb0af8a2d7fbffaffa0f84bf2145a",
+        "place": "7scenes:heads:0:0:1:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000349.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 349,
+        "center": [
+          -0.23886469,
+          -0.13590738,
+          0.16234133
+        ],
+        "view": [
+          -0.12477410154263958,
+          0.3455209591100138,
+          0.9300788624627071
+        ],
+        "sha256": "c4d6d73b40c81651d6d0cd1c0f4f87ff31426009d0259c9c68d15fa8e4b03e95",
+        "place": "7scenes:heads:0:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000416.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 416,
+        "center": [
+          -0.69302982,
+          -0.19594909,
+          0.20953977
+        ],
+        "view": [
+          0.2825491987019332,
+          0.31264149310195927,
+          0.906874438444415
+        ],
+        "sha256": "e2d702637a62e26ece67b66b58541dad5f2bcdcb5fa16ec145db2c622dacacbd",
+        "place": "7scenes:heads:-1:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000482.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 482,
+        "center": [
+          -0.44195855,
+          -0.043005433,
+          -0.040338989
+        ],
+        "view": [
+          0.10725999166906772,
+          0.176552027560637,
+          0.9784296989315991
+        ],
+        "sha256": "2c7621b5f0c90e24b2313fd815d32e9868e4302c1777d2991086a42d8aeec10c",
+        "place": "7scenes:heads:-1:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000542.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 542,
+        "center": [
+          -0.3386842,
+          0.35207751,
+          -0.093682133
+        ],
+        "view": [
+          0.24738068047884926,
+          0.41052414220630473,
+          0.8776518259489917
+        ],
+        "sha256": "8c39a6092e5ca723a021e2a53f96c7ee7a8b33891a7aabbc94c614e8fd161533",
+        "place": "7scenes:heads:-1:1:0:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000606.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 606,
+        "center": [
+          0.19300281,
+          0.22254269,
+          -0.097654596
+        ],
+        "view": [
+          0.38847694754163636,
+          0.3668943336781881,
+          0.8452657624342601
+        ],
+        "sha256": "0b2ec14195843993144a876b54e32050e4c5af0a91ecb9209cd7b99c311247df",
+        "place": "7scenes:heads:0:0:0:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000674.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 674,
+        "center": [
+          0.12732066,
+          -0.11893587,
+          0.21189362
+        ],
+        "view": [
+          0.7035822279644612,
+          0.3201968423484643,
+          0.6343863417844345
+        ],
+        "sha256": "0898a0f73dba6949b2de45b60016c693df316cb1cc5511c92474be6548d625c9",
+        "place": "7scenes:heads:0:0:0:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000737.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 737,
+        "center": [
+          0.035587609,
+          -0.3818619,
+          0.28429165
+        ],
+        "view": [
+          0.5332134202625196,
+          0.5248228578285417,
+          0.663509168250619
+        ],
+        "sha256": "725b4999d6d6d203c2989704be22217090bddc48c0e80cfd270ab918ce65e1f4",
+        "place": "7scenes:heads:0:-1:1:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000801.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 801,
+        "center": [
+          -0.24221298,
+          -0.31341034,
+          0.043912403
+        ],
+        "view": [
+          0.017760914360063055,
+          0.5092352254335256,
+          0.8604440917914196
+        ],
+        "sha256": "8f4386ea5930bff488cb289535b81f0508f8729c4f92cbbfafc37b6eef40abdc",
+        "place": "7scenes:heads:0:-1:0:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000868.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 868,
+        "center": [
+          -0.62498122,
+          -0.1021309,
+          0.1259142
+        ],
+        "view": [
+          0.06635064508944495,
+          0.18470241704021995,
+          0.980552195977203
+        ],
+        "sha256": "77fcf0f605cb77f2a0fca475d2c3cdab6d241c0ce63522a105e0c7a473bfb52f",
+        "place": "7scenes:heads:-1:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000937.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 937,
+        "center": [
+          -0.21308467,
+          -0.15210672,
+          0.26511776
+        ],
+        "view": [
+          -0.3846723739108911,
+          0.2279436911462393,
+          0.8944656720167563
+        ],
+        "sha256": "406aa193c55e53581eb734fcf1fe26be8b3fa3e9fa5da4e9c269396fcced6f7a",
+        "place": "7scenes:heads:0:0:1:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-02/frame-000999.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-02",
+        "frame": 999,
+        "center": [
+          0.090225816,
+          -0.067049876,
+          0.032382742
+        ],
+        "view": [
+          -0.2349061744597843,
+          0.35343356432504397,
+          0.9054853973472815
+        ],
+        "sha256": "093661bcb7dbc4d87ffeb8bfb7abbbd4ad673262bd9e146ca1c661260d7b9bb6",
+        "place": "7scenes:heads:0:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-01/frame-000000.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-01",
+        "frame": 0,
+        "center": [
+          -0.94861656,
+          -0.56749225,
+          0.71117169
+        ],
+        "view": [
+          0.31709429622117197,
+          0.016644265938162317,
+          0.9482479505463639
+        ],
+        "sha256": "c1c318fa0a389bbb61cc72ea8062e634e48a3968d99e2befca21092daae79246",
+        "place": "7scenes:office:-2:-1:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-01/frame-000389.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-01",
+        "frame": 389,
+        "center": [
+          -0.87834525,
+          -0.95966774,
+          1.0582995
+        ],
+        "view": [
+          -0.6681834633412028,
+          0.2336275258145523,
+          0.706363248264748
+        ],
+        "sha256": "cb3c2f477dd09b992b818308b4d812d2b12c8989a823544afbc81eeecb4cd1b7",
+        "place": "7scenes:office:-2:-2:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-01/frame-000777.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-01",
+        "frame": 777,
+        "center": [
+          0.6253888,
+          -1.0797951,
+          1.3102829
+        ],
+        "view": [
+          -0.29534027346650116,
+          0.40554724224297767,
+          0.8650465635894105
+        ],
+        "sha256": "7ff3b9f3583b6200e568643677d5a9a43c7655dd8646de2c004b64ff7f4fdc3f",
+        "place": "7scenes:office:1:-2:3:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-03/frame-000165.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-03",
+        "frame": 165,
+        "center": [
+          -0.52432925,
+          -1.325479,
+          1.1531361
+        ],
+        "view": [
+          0.6504898882935232,
+          0.4530251009949894,
+          0.6096155863299096
+        ],
+        "sha256": "8ae9baeb20644f13f36884db2172e9440ff94700e22c23d3541c87ab25de7e88",
+        "place": "7scenes:office:-1:-3:2:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-03/frame-000559.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-03",
+        "frame": 559,
+        "center": [
+          0.41546154,
+          -1.3221794,
+          1.270503
+        ],
+        "view": [
+          0.7094226189840405,
+          0.6891360534484615,
+          -0.14768563745775748
+        ],
+        "sha256": "de20f7a6c78957797a76674cc88251cef6cf343594d5e8c143861e83daba488c",
+        "place": "7scenes:office:1:-3:3:2:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-03/frame-000956.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-03",
+        "frame": 956,
+        "center": [
+          -0.51731968,
+          -0.68312043,
+          1.0048047
+        ],
+        "view": [
+          -0.07352703190112288,
+          0.24303328787021133,
+          0.9672272724477977
+        ],
+        "sha256": "27d3f34728883d94d17b311758564a22b4d1b4447e5e829b5d2d32e4f25bb894",
+        "place": "7scenes:office:-1:-1:2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-04/frame-000359.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-04",
+        "frame": 359,
+        "center": [
+          -0.55904639,
+          -0.99852115,
+          1.2527133
+        ],
+        "view": [
+          -0.5222093328946859,
+          0.42515648866069006,
+          0.739283012646307
+        ],
+        "sha256": "4136598b4bf6d62d8bb225534ab131631a781ea8b6d35188e2293d0c2556bded",
+        "place": "7scenes:office:-1:-2:3:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-04/frame-000785.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-04",
+        "frame": 785,
+        "center": [
+          -0.55973899,
+          -1.0067855,
+          1.6550078
+        ],
+        "view": [
+          -0.07599598512426883,
+          0.4586066491836386,
+          0.8853838441995352
+        ],
+        "sha256": "8102ff2453d4f2010855f35d0c5d3284aabb8bb06bf9db52c65232330d1423d7",
+        "place": "7scenes:office:-1:-2:3:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-05/frame-000220.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-05",
+        "frame": 220,
+        "center": [
+          0.93240106,
+          -1.1396779,
+          1.5239007
+        ],
+        "view": [
+          0.7599077691144264,
+          0.10608104811594427,
+          0.6413166095386572
+        ],
+        "sha256": "0ddae46e7f5ad9ba04c3136b6c4d95068d0edbb2623acc54e90935b9657d6cd4",
+        "place": "7scenes:office:2:-2:3:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-05/frame-000653.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-05",
+        "frame": 653,
+        "center": [
+          -1.115624,
+          -1.0822775,
+          1.6565849
+        ],
+        "view": [
+          -0.6718113949306156,
+          0.27544450458153213,
+          0.6876043735588182
+        ],
+        "sha256": "e0f0c99af0aba58ea368042a3cb54fb51145ab75c6816a1f086b79d6acf2cfdb",
+        "place": "7scenes:office:-2:-2:3:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-08/frame-000045.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-08",
+        "frame": 45,
+        "center": [
+          -0.48451152,
+          -0.40660045,
+          0.6926133
+        ],
+        "view": [
+          0.4060191725192528,
+          0.13002666189809878,
+          0.904567022802854
+        ],
+        "sha256": "37aec24af7e0cbcdaf1475de313114ffaf96144b961874f5281fd01f67276522",
+        "place": "7scenes:office:-1:-1:1:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-08/frame-000438.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-08",
+        "frame": 438,
+        "center": [
+          -0.48937276,
+          -0.18141256,
+          1.0105394
+        ],
+        "view": [
+          -0.2768322089994817,
+          -0.3440911150131674,
+          0.8971985469390052
+        ],
+        "sha256": "b68b05b3bba9489f3b1cf0d458e37760f3a259a0cf23a9540a721b90adcff6be",
+        "place": "7scenes:office:-1:0:2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-08/frame-000831.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-08",
+        "frame": 831,
+        "center": [
+          -1.2609938,
+          -0.35544658,
+          1.8361447
+        ],
+        "view": [
+          0.9741931679192225,
+          0.10956559326089246,
+          0.19733994109885172
+        ],
+        "sha256": "629cbc039f65560bbd3818457c0e5820d0e76568c125629db2ae0953e7506c6c",
+        "place": "7scenes:office:-3:-1:4:2:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-10/frame-000217.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-10",
+        "frame": 217,
+        "center": [
+          0.79564285,
+          -1.1788,
+          0.27602142
+        ],
+        "view": [
+          -0.45571062031442,
+          0.26360622705992226,
+          0.8501997339377844
+        ],
+        "sha256": "b183e0c732133a59db02f6df6e61a1c3be5b390aae1d7d46b63adf5096b6db7d",
+        "place": "7scenes:office:2:-2:1:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-10/frame-000602.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-10",
+        "frame": 602,
+        "center": [
+          0.65082884,
+          -1.4462186,
+          0.41546786
+        ],
+        "view": [
+          0.7373754285464478,
+          0.5480357694118019,
+          0.394885138769689
+        ],
+        "sha256": "d197bba5071bbf2bc66fd7d4fa56261b745acfcf3cbff73f3ee94087cb6aa142",
+        "place": "7scenes:office:1:-3:1:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-10/frame-000999.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-10",
+        "frame": 999,
+        "center": [
+          0.8808459,
+          -1.2760186,
+          0.62839609
+        ],
+        "view": [
+          -0.4863952830655708,
+          0.34488935704388257,
+          0.8027894867332409
+        ],
+        "sha256": "da26402252609651b458085869c8b6a3df1ba667acc7defb7e04154fb2ae1897",
+        "place": "7scenes:office:2:-3:1:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-02/frame-000000.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-02",
+        "frame": 0,
+        "center": [
+          -0.17336708,
+          -0.41591907,
+          -0.27640861
+        ],
+        "view": [
+          -0.24628220892652958,
+          0.15360410162235374,
+          0.9569487204291872
+        ],
+        "sha256": "97304da226c744b8a3ea444acc35867072bee4edfdeb2a7e60d93e5b3ada1ed4",
+        "place": "7scenes:pumpkin:0:-1:-1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-02/frame-000265.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-02",
+        "frame": 265,
+        "center": [
+          0.51699233,
+          -0.97840899,
+          -0.49803615
+        ],
+        "view": [
+          -0.15170727251274022,
+          -0.2664771945910875,
+          0.9518270894598497
+        ],
+        "sha256": "ff3a143c0e931cfe2bde83ccc60def604c22e7072897ef765a7438392a0ea988",
+        "place": "7scenes:pumpkin:1:-2:-1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-02/frame-000531.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-02",
+        "frame": 531,
+        "center": [
+          -0.76036549,
+          -0.64522356,
+          0.41923204
+        ],
+        "view": [
+          0.3718395937273118,
+          -0.24952288715339313,
+          0.894132901376156
+        ],
+        "sha256": "b23e21f51cc51553e453f278eb0d4b83b35f1ee432dc9bdd34bd543768d060a0",
+        "place": "7scenes:pumpkin:-2:-1:1:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-02/frame-000796.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-02",
+        "frame": 796,
+        "center": [
+          -0.62867975,
+          -0.80447197,
+          0.92630643
+        ],
+        "view": [
+          0.5714640427592605,
+          -0.16827241495416437,
+          0.8031894186297125
+        ],
+        "sha256": "7929c4dc48ed3894845af22b4ebf87a447a6f53abd329517444ac8eec332ba9c",
+        "place": "7scenes:pumpkin:-1:-2:2:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-03/frame-000062.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-03",
+        "frame": 62,
+        "center": [
+          -0.070541188,
+          -0.6920383,
+          0.55521661
+        ],
+        "view": [
+          0.36973875720160754,
+          0.25028693773643934,
+          0.8947903107552777
+        ],
+        "sha256": "c9876281b03eca23fbf782eb3b5be13fdf42b3a4beb1dd419e6d257a20f8a564",
+        "place": "7scenes:pumpkin:0:-1:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-03/frame-000330.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-03",
+        "frame": 330,
+        "center": [
+          -0.18328649,
+          -0.75554162,
+          0.7046299
+        ],
+        "view": [
+          0.32628156670702224,
+          -0.6172403418799032,
+          0.7159292559905561
+        ],
+        "sha256": "7e68cffafb870b7085dc91dede601228ca6837a7eb02533d803d53a2700c5a7a",
+        "place": "7scenes:pumpkin:0:-2:1:1:-1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-03/frame-000596.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-03",
+        "frame": 596,
+        "center": [
+          0.94469947,
+          -0.87013298,
+          0.80703849
+        ],
+        "view": [
+          -0.6158379876438315,
+          -0.08960263810973235,
+          0.7827611003483582
+        ],
+        "sha256": "5d97868abd27de19e0c8aeafb2512732377b57c352ce709d773c6191b7a75b29",
+        "place": "7scenes:pumpkin:2:-2:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-03/frame-000861.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-03",
+        "frame": 861,
+        "center": [
+          -1.0061309,
+          -0.1709816,
+          -0.33285517
+        ],
+        "view": [
+          0.06376238555158885,
+          -0.13865482636873244,
+          0.9882859896373253
+        ],
+        "sha256": "fb3241f7d3a4820eb26dff2483be0fb1f11ace150ecaab992eb904780c22e95e",
+        "place": "7scenes:pumpkin:-2:0:-1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-06/frame-000130.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-06",
+        "frame": 130,
+        "center": [
+          0.48494858,
+          -1.040777,
+          0.50036711
+        ],
+        "view": [
+          0.10310348563561549,
+          -0.401740092042494,
+          0.909931079640362
+        ],
+        "sha256": "c44300fbf71bd95b54c179aa633f5f3e58972a6cf91ab11b4c5ae98b6960d868",
+        "place": "7scenes:pumpkin:1:-2:1:0:-1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-06/frame-000395.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-06",
+        "frame": 395,
+        "center": [
+          -0.1431109,
+          -0.58513516,
+          0.31071833
+        ],
+        "view": [
+          0.19727145405752491,
+          -0.01390776111360184,
+          0.9802502474342135
+        ],
+        "sha256": "da54f3cd43de044bb08ef42fb7d177d9aef564543a9cff0c6a15c2fc510876c8",
+        "place": "7scenes:pumpkin:0:-1:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-06/frame-000664.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-06",
+        "frame": 664,
+        "center": [
+          -0.71472341,
+          -0.86522681,
+          1.1136179
+        ],
+        "view": [
+          0.5440754700982554,
+          0.22393074534718646,
+          0.808601820505999
+        ],
+        "sha256": "604c9bb23f36ea13991364c20a6556f5af348fd33c1db72d8bdaf1eea7e33a4a",
+        "place": "7scenes:pumpkin:-1:-2:2:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-06/frame-000929.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-06",
+        "frame": 929,
+        "center": [
+          -0.028835846,
+          -1.0038095,
+          0.87074387
+        ],
+        "view": [
+          -0.4635234469639815,
+          -0.20274112009756026,
+          0.86257872239942
+        ],
+        "sha256": "f446e8c842167e8349fa922ffee5ee028d38f209284fb9672851675f73eb0cd4",
+        "place": "7scenes:pumpkin:0:-2:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-08/frame-000195.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-08",
+        "frame": 195,
+        "center": [
+          0.61218572,
+          -0.64711189,
+          0.48661864
+        ],
+        "view": [
+          0.0979188858857196,
+          0.26495334258732456,
+          0.9592766118480651
+        ],
+        "sha256": "79ee0c4f215ae4e0a75f5f7dca0fe3092f8b3b1f2e2c06caa79c8eebcd1986a2",
+        "place": "7scenes:pumpkin:1:-1:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-08/frame-000467.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-08",
+        "frame": 467,
+        "center": [
+          -0.81361568,
+          -0.50451404,
+          0.24284683
+        ],
+        "view": [
+          0.3504243187498813,
+          0.26172453956318364,
+          0.8992791903625488
+        ],
+        "sha256": "09222ad69b9f83fdb1a42955c5445222a052ce92fffac702e09210ef907ac769",
+        "place": "7scenes:pumpkin:-2:-1:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-08/frame-000733.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-08",
+        "frame": 733,
+        "center": [
+          1.01671,
+          -0.95222926,
+          0.50200862
+        ],
+        "view": [
+          -0.31977166733838774,
+          0.0007998705431496039,
+          0.9474942960117183
+        ],
+        "sha256": "22c0594aa19a82f89c604932294cb0d7efab498073f15ef71db5d625d7c9320c",
+        "place": "7scenes:pumpkin:2:-2:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-08/frame-000999.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-08",
+        "frame": 999,
+        "center": [
+          -0.3494525,
+          -0.91816562,
+          0.2884419
+        ],
+        "view": [
+          -0.3095315971621949,
+          -0.2656007424683155,
+          0.9130424064404129
+        ],
+        "sha256": "8f37031a0b2d4299187f86ef2ac10bacb52427bb323d2a7d7a035a9249abbf93",
+        "place": "7scenes:pumpkin:-1:-2:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-01/frame-000000.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-01",
+        "frame": 0,
+        "center": [
+          -0.34045634,
+          0.016469818,
+          0.29656917
+        ],
+        "view": [
+          -0.31424190517360245,
+          0.04528215857692556,
+          0.948262385180114
+        ],
+        "sha256": "2a904b0ffe436d949bf6a0f8007db33ccb0823ee34a22ee335e9cd7bd77dd5bb",
+        "place": "7scenes:redkitchen:-1:0:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-01/frame-000472.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-01",
+        "frame": 472,
+        "center": [
+          0.4475632,
+          -0.38951519,
+          0.69433033
+        ],
+        "view": [
+          -0.29703275358349135,
+          -0.0924935145705979,
+          0.9503770267956753
+        ],
+        "sha256": "370976cb59fb45c934b754d659543ac7b6ab33cb3bbd47a7f120e35fd1ab8bc4",
+        "place": "7scenes:redkitchen:1:-1:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-01/frame-000954.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-01",
+        "frame": 954,
+        "center": [
+          -0.34365678,
+          -0.16013181,
+          0.56391823
+        ],
+        "view": [
+          0.1042396406020889,
+          -0.04821291291502653,
+          0.9933829132592303
+        ],
+        "sha256": "e4d98ad736727e0de96e5f865fd461b5b7f5c316c1922818e37c34cc05af27ff",
+        "place": "7scenes:redkitchen:-1:0:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-02/frame-000403.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-02",
+        "frame": 403,
+        "center": [
+          0.24643551,
+          -1.2708371,
+          2.4324036
+        ],
+        "view": [
+          -0.8526298748770726,
+          0.5205583384837323,
+          -0.045180888682753835
+        ],
+        "sha256": "d0a706a42dae21c0a7e7d7fcd2198621a37ce692dbbdd035807b38740dce9c97",
+        "place": "7scenes:redkitchen:0:-3:5:-2:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-02/frame-000879.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-02",
+        "frame": 879,
+        "center": [
+          -1.218803,
+          -0.78897804,
+          1.0377948
+        ],
+        "view": [
+          0.4175882993176478,
+          0.3357308310700997,
+          0.8443369122228251
+        ],
+        "sha256": "2ca0833c6f489604d1a5592331e477186126e451ae8693861c317b9689519f64",
+        "place": "7scenes:redkitchen:-2:-2:2:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-05/frame-000337.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-05",
+        "frame": 337,
+        "center": [
+          0.41783148,
+          -0.58081907,
+          1.171653
+        ],
+        "view": [
+          -0.44082894506510334,
+          -0.2788118420801909,
+          0.8531903644021297
+        ],
+        "sha256": "82bc41887e73739a1f6b33632a1a67ddd71fa28ed4d8c1f12047065aa8a7fe4f",
+        "place": "7scenes:redkitchen:1:-1:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-05/frame-000786.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-05",
+        "frame": 786,
+        "center": [
+          -0.51763362,
+          -0.55093521,
+          1.4333152
+        ],
+        "view": [
+          -0.9629662191972591,
+          0.22139370084211696,
+          0.1538859639875172
+        ],
+        "sha256": "ad3925db1400a05cf94fb0a5f022af8a2fd3411cd8e0538829a933830c785473",
+        "place": "7scenes:redkitchen:-1:-1:3:-2:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-07/frame-000233.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-07",
+        "frame": 233,
+        "center": [
+          1.1554179,
+          -1.1766346,
+          2.1824293
+        ],
+        "view": [
+          -0.8582222343108526,
+          0.3713335628009899,
+          0.3543529055504006
+        ],
+        "sha256": "3692aa2ab0d5c0ff7d5b52bd5f18a580b4c8d385ce8a8ddba2232e0b6f715f05",
+        "place": "7scenes:redkitchen:2:-2:4:-2:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-07/frame-000686.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-07",
+        "frame": 686,
+        "center": [
+          0.29762977,
+          -1.0606815,
+          2.2942655
+        ],
+        "view": [
+          -0.6133308034341836,
+          0.2650178606283493,
+          0.7440368667658557
+        ],
+        "sha256": "a30a813a06b4d93d8c05b5fabb3d2fb541dd4ebd60f33d88ebb1ed85968124a7",
+        "place": "7scenes:redkitchen:1:-2:5:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-08/frame-000138.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-08",
+        "frame": 138,
+        "center": [
+          -0.46751067,
+          -0.62896347,
+          0.94165933
+        ],
+        "view": [
+          0.2403297052557862,
+          0.17824812048577499,
+          0.9541851184728022
+        ],
+        "sha256": "3fadd5da60c1b0769a89567dcea9b0e69be506715988d5cce669e663bbf470ec",
+        "place": "7scenes:redkitchen:-1:-1:2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-08/frame-000617.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-08",
+        "frame": 617,
+        "center": [
+          -1.3709563,
+          -0.37755859,
+          0.90631682
+        ],
+        "view": [
+          -0.5166690525875294,
+          0.05220951857961288,
+          0.8545918653181704
+        ],
+        "sha256": "09454067c7b48d029ba903c588ab79d4ed7e63db6e0e809be50d469bf897a1f5",
+        "place": "7scenes:redkitchen:-3:-1:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-11/frame-000094.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-11",
+        "frame": 94,
+        "center": [
+          -0.61462533,
+          -0.0404916,
+          -0.33482295
+        ],
+        "view": [
+          -0.004811742140180319,
+          0.010028035974825161,
+          0.999938140902758
+        ],
+        "sha256": "243ab8550822e5cffd7b0686f5bcc6e53ad3f06807daebfd748a348656b36b62",
+        "place": "7scenes:redkitchen:-1:0:-1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-11/frame-000540.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-11",
+        "frame": 540,
+        "center": [
+          0.60548902,
+          -0.36245513,
+          0.9911871
+        ],
+        "view": [
+          -0.5590224203386275,
+          0.08493825527777567,
+          0.8247905348323963
+        ],
+        "sha256": "05929eb0faea4b230d1bac810297f5e72f173c85541ffa4a7f52cbbdb38390e6",
+        "place": "7scenes:redkitchen:1:-1:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-13/frame-000006.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-13",
+        "frame": 6,
+        "center": [
+          0.0014448729,
+          0.044646885,
+          0.31955284
+        ],
+        "view": [
+          0.15717029972502228,
+          -0.03988624405605708,
+          0.9867657191144448
+        ],
+        "sha256": "9cddee6699d7167bf9d7a605a3d641b1d6f1b567e6626a4072d918e65a664de7",
+        "place": "7scenes:redkitchen:0:0:1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-13/frame-000535.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-13",
+        "frame": 535,
+        "center": [
+          -0.91467357,
+          -0.50687623,
+          1.0576934
+        ],
+        "view": [
+          0.226473057993005,
+          -0.16049579369158906,
+          0.9607034163625129
+        ],
+        "sha256": "ec7ee07b02ecc33cdf712108f72cc1a91b880d024d40fe8ff4b91b398b843185",
+        "place": "7scenes:redkitchen:-2:-1:2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-13/frame-000999.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-13",
+        "frame": 999,
+        "center": [
+          1.5695002,
+          -1.1019573,
+          2.1786258
+        ],
+        "view": [
+          -0.9132132630324595,
+          0.38891402986526835,
+          0.12160350979953255
+        ],
+        "sha256": "e5caf5bcaade0684fc3f564dfc9752d71d98e2cfda3febf0d536ac04c2028905",
+        "place": "7scenes:redkitchen:3:-2:4:-2:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-02/frame-000000.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-02",
+        "frame": 0,
+        "center": [
+          -0.063573577,
+          -0.87349087,
+          -0.14802009
+        ],
+        "view": [
+          -0.36111083874897415,
+          0.5257305160614842,
+          0.7701989266544961
+        ],
+        "sha256": "e66095a27acdc4b12715e5a59ca8ac767cd17cd2f779555e991fa09681c0f389",
+        "place": "7scenes:stairs:0:-2:0:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-02/frame-000133.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-02",
+        "frame": 133,
+        "center": [
+          0.32123756,
+          -0.94683504,
+          0.33862445
+        ],
+        "view": [
+          -0.29101785528426855,
+          0.47236611777026055,
+          0.8319728713656456
+        ],
+        "sha256": "e84d775b4da2985c8739e56999af8b5f6292e0ca639b0875a41eb5d030b99b41",
+        "place": "7scenes:stairs:1:-2:1:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-02/frame-000266.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-02",
+        "frame": 266,
+        "center": [
+          0.7956304,
+          -0.81504273,
+          -0.00314384
+        ],
+        "view": [
+          -0.6869512094540109,
+          0.30354246044321054,
+          0.6602726789272395
+        ],
+        "sha256": "c2abf1b35c6c7c9ada841eb56f3a78d715f32011b74ffac7ff16ec5fa34a7d7e",
+        "place": "7scenes:stairs:2:-2:0:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-02/frame-000399.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-02",
+        "frame": 399,
+        "center": [
+          0.30778742,
+          -0.99313384,
+          0.75317132
+        ],
+        "view": [
+          -0.36626421454877045,
+          0.12373055490389587,
+          0.9222479465545836
+        ],
+        "sha256": "3f7f3703fffb6157560b7714c7e37da8e7fa98af642a2b8a0687798a6c68e66a",
+        "place": "7scenes:stairs:1:-2:2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-03/frame-000032.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-03",
+        "frame": 32,
+        "center": [
+          -1.1919627,
+          -0.70583773,
+          -0.0048976606
+        ],
+        "view": [
+          0.8243096417609592,
+          0.2854576553442501,
+          0.4889044298278371
+        ],
+        "sha256": "c92c171f9800db9646dafe2bb4d007ac6ed81bac945501addc7519e9aef54f9f",
+        "place": "7scenes:stairs:-2:-1:0:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-03/frame-000166.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-03",
+        "frame": 166,
+        "center": [
+          0.047284644,
+          -1.0865223,
+          0.1857419
+        ],
+        "view": [
+          0.5380029416900038,
+          0.7254838793938987,
+          0.4292155349850252
+        ],
+        "sha256": "448dcaf46320146c98faefd848f53392e0e41e6f5cb94530aa7f500644f4347d",
+        "place": "7scenes:stairs:0:-2:0:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-03/frame-000299.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-03",
+        "frame": 299,
+        "center": [
+          0.49618408,
+          -1.091812,
+          0.17486514
+        ],
+        "view": [
+          0.4837049209049589,
+          0.7801668348172724,
+          0.39669794471805137
+        ],
+        "sha256": "796018fe195bc7489576918ebf0b5f0ae90d4d5d56d5bdd4af54cf05e887431e",
+        "place": "7scenes:stairs:1:-2:0:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-03/frame-000432.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-03",
+        "frame": 432,
+        "center": [
+          0.58670461,
+          -1.1195585,
+          -0.052649479
+        ],
+        "view": [
+          0.28263698756385863,
+          0.785006194708375,
+          0.5512545759722128
+        ],
+        "sha256": "4b0a6d0059931bf2afe9515c885411dce076c3a1affcf58013a8c1775105af63",
+        "place": "7scenes:stairs:1:-2:0:1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-05/frame-000065.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-05",
+        "frame": 65,
+        "center": [
+          0.55305243,
+          -0.76591539,
+          -0.038711943
+        ],
+        "view": [
+          -0.30163340234919744,
+          0.5050044627144825,
+          0.808695111414496
+        ],
+        "sha256": "3e05c86423224a31bcfb4ed80695fe6e01a86d3cbd092e456ca5c9eb906be892",
+        "place": "7scenes:stairs:1:-2:0:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-05/frame-000198.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-05",
+        "frame": 198,
+        "center": [
+          -0.01639045,
+          -1.0715797,
+          0.86544192
+        ],
+        "view": [
+          0.04938113952383186,
+          0.45043395772062556,
+          0.8914430732197437
+        ],
+        "sha256": "08309ca8f792440f3192d09268c6f8417b35035c219f2c03cfedb52109bdbd46",
+        "place": "7scenes:stairs:0:-2:2:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-05/frame-000333.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-05",
+        "frame": 333,
+        "center": [
+          0.01063258,
+          -1.6136018,
+          1.5419563
+        ],
+        "view": [
+          0.09756717978548911,
+          0.41776749650651157,
+          0.9033000411222109
+        ],
+        "sha256": "9e9f6929e0ff354466f324b3bbd09fc5007592a42c7f798f1486aa64cabc2f78",
+        "place": "7scenes:stairs:0:-3:3:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-05/frame-000466.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-05",
+        "frame": 466,
+        "center": [
+          -0.019920055,
+          -1.7188821,
+          1.6510613
+        ],
+        "view": [
+          0.10946320206803414,
+          0.35938052149695,
+          0.9267488592718056
+        ],
+        "sha256": "167174e570bd9e1a849ad0d13b3dfb39eed97ce11cb2f87871694b578fbe0570",
+        "place": "7scenes:stairs:0:-3:3:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-06/frame-000099.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-06",
+        "frame": 99,
+        "center": [
+          0.31769484,
+          -0.68018281,
+          0.057271961
+        ],
+        "view": [
+          -0.2692186839702316,
+          0.044490508383880696,
+          0.9620508795615127
+        ],
+        "sha256": "6f556f22ddfcfcb0faaca8cc48d84b4e9808b166cf2a42e8289271261716c67a",
+        "place": "7scenes:stairs:1:-1:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-06/frame-000232.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-06",
+        "frame": 232,
+        "center": [
+          -0.0021435104,
+          -0.6455614,
+          0.30336389
+        ],
+        "view": [
+          -0.6166366993527403,
+          0.11411110218461804,
+          0.7789337824035942
+        ],
+        "sha256": "7fe6b598e6a509040e3df0922a73c22b466b50b3ee66709a070e82d24e49d719",
+        "place": "7scenes:stairs:0:-1:1:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-06/frame-000365.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-06",
+        "frame": 365,
+        "center": [
+          -0.89249742,
+          -0.61316776,
+          0.40001276
+        ],
+        "view": [
+          0.52606396302371,
+          0.26026433453640657,
+          0.8096413915901967
+        ],
+        "sha256": "daa15845633a97a60a638a4f2a0984df911244e60a9ab48ef860926a6ff309f8",
+        "place": "7scenes:stairs:-2:-1:1:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-06/frame-000499.color.png",
+        "split": "train",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-06",
+        "frame": 499,
+        "center": [
+          -1.4462491,
+          -0.61725616,
+          0.047619436
+        ],
+        "view": [
+          0.07003650127892783,
+          0.3368611360379869,
+          0.9389459321578659
+        ],
+        "sha256": "29be18ecf4eead7f532e4a111aa17eceb7679652eb9347a7d453ea3624f2d19d",
+        "place": "7scenes:stairs:-3:-1:0:0:0"
+      },
+      {
+        "center": [
+          -2.2469700585044934,
+          0.570609109360213,
+          -4.576694906817724
+        ],
+        "id": "stair_6_7/1/frame_000000.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000000.jpg",
+        "sha256": "9451143cacfbe7cb73c5f67ecc5a7f4f2ca8c0b194bf5a935ef2e3f6a4c953db",
+        "split": "train",
+        "view": [
+          0.5324195890320876,
+          -0.08635750014856258,
+          0.8420639900761664
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 0,
+        "place": "project:-4:1:-9:1:0"
+      },
+      {
+        "center": [
+          -1.2550550674573822,
+          0.8569091338785219,
+          -4.719492508669766
+        ],
+        "id": "stair_6_7/1/frame_000005.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000005.jpg",
+        "sha256": "8be4fa6b6ba8b3d2a03e7fb0e0d3bc8f18e9ceed2a85fef390e507ee1170e012",
+        "split": "train",
+        "view": [
+          0.3149708819129332,
+          -0.03584941593083445,
+          0.9484240417262771
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 5,
+        "place": "project:-3:2:-9:0:0"
+      },
+      {
+        "center": [
+          0.031711733349039886,
+          1.1141413089860084,
+          -4.765858842894089
+        ],
+        "id": "stair_6_7/1/frame_000010.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000010.jpg",
+        "sha256": "ddebeab11fc983c67583bc5f86d72a8677e9b319b0ad823b5fe3c964a378b5af",
+        "split": "train",
+        "view": [
+          -0.10201216783078838,
+          -0.1476131750902375,
+          0.9837702313824311
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 10,
+        "place": "project:0:2:-10:0:0"
+      },
+      {
+        "center": [
+          1.003161171632315,
+          1.2738678389141835,
+          -4.784437568431891
+        ],
+        "id": "stair_6_7/1/frame_000016.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000016.jpg",
+        "sha256": "3b81cf44e29950cbab53136c18bd193b5ddf327789766bd46fcf19606a0dcb4c",
+        "split": "train",
+        "view": [
+          -0.342177406618629,
+          -0.1561669303354654,
+          0.926567057621491
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 16,
+        "place": "project:2:3:-10:0:0"
+      },
+      {
+        "center": [
+          0.3255437024379827,
+          1.0675816297121816,
+          -4.667718475176143
+        ],
+        "id": "stair_6_7/1/frame_000021.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000021.jpg",
+        "sha256": "1bd7493b99c1b700fee1c81039f54bfec1e83e939aab4b62d649b8ec3db6fab7",
+        "split": "train",
+        "view": [
+          -0.3171911599544322,
+          -0.20848609835495413,
+          0.9251612372119199
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 21,
+        "place": "project:1:2:-9:0:0"
+      },
+      {
+        "center": [
+          -0.26143791158492696,
+          0.43845456623762863,
+          -3.6975819467978526
+        ],
+        "id": "stair_6_7/1/frame_000027.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000027.jpg",
+        "sha256": "b105e1ba91d3514c99bdeb4c2c3afd95f8b405821a2da249b05e2d17aba26397",
+        "split": "train",
+        "view": [
+          0.13830306220283606,
+          -0.16821190931085908,
+          0.9760005207740997
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 27,
+        "place": "project:-1:1:-7:0:0"
+      },
+      {
+        "center": [
+          -0.04345181672592961,
+          -0.06101531809441494,
+          -2.6690727985476803
+        ],
+        "id": "stair_6_7/1/frame_000032.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000032.jpg",
+        "sha256": "81f3d4ae73e0025baebc416593e0b1b86d2f653b62fb0702339160dcf3bf536d",
+        "split": "train",
+        "view": [
+          -0.3061508225206158,
+          0.0008221489452034745,
+          0.9519826668280585
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 32,
+        "place": "project:0:0:-5:0:0"
+      },
+      {
+        "center": [
+          -0.17146897429358465,
+          -0.3627619827424808,
+          -2.1619838930257846
+        ],
+        "id": "stair_6_7/1/frame_000038.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000038.jpg",
+        "sha256": "c3b0bed16683770a7281177d501ca58707dc9e053c30942cc2226b35fdf18677",
+        "split": "train",
+        "view": [
+          0.30010330114859657,
+          0.2409367621450216,
+          0.9229775107156123
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 38,
+        "place": "project:0:-1:-4:0:0"
+      },
+      {
+        "center": [
+          -0.31744344701106114,
+          -0.507280057443945,
+          -2.0829851885715778
+        ],
+        "id": "stair_6_7/1/frame_000043.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000043.jpg",
+        "sha256": "eda156b6f54aaf85850601d7e48b5dc5f47241ec63adddf59ed793b4ae94f2d6",
+        "split": "train",
+        "view": [
+          0.8988158693925635,
+          0.3565657037826927,
+          0.2549331908835004
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 43,
+        "place": "project:-1:-1:-4:2:0"
+      },
+      {
+        "center": [
+          0.040820945039740424,
+          -0.4978896974955058,
+          -1.8744783454517129
+        ],
+        "id": "stair_6_7/1/frame_000049.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000049.jpg",
+        "sha256": "5d27bd4bc87c9e58725654abcf9d0822591ce44c788972cc602a4a3b6b8bba59",
+        "split": "train",
+        "view": [
+          0.41745616010612163,
+          0.11547865903496896,
+          0.901329592156464
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 49,
+        "place": "project:0:-1:-4:1:0"
+      },
+      {
+        "center": [
+          0.9195826790833691,
+          -0.7046197730673086,
+          -1.2148370273276454
+        ],
+        "id": "stair_6_7/1/frame_000054.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000054.jpg",
+        "sha256": "bd8ae48be6e7cffb53e858b8352a2536e1564c275da2e91fb7eb4eda7824ff14",
+        "split": "train",
+        "view": [
+          0.059743917840847684,
+          0.09444434270289725,
+          0.9937358453897313
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 54,
+        "place": "project:2:-1:-2:0:0"
+      },
+      {
+        "center": [
+          1.3126014374731287,
+          -1.0028019684184821,
+          -0.5358431655764511
+        ],
+        "id": "stair_6_7/1/frame_000059.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000059.jpg",
+        "sha256": "880a89dd8be7fa82fd473ceb05067a8a9ce414f198d13998ea91c6375714c8fc",
+        "split": "train",
+        "view": [
+          -0.2279736205825546,
+          0.17554735035879215,
+          0.9577114158766664
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 59,
+        "place": "project:3:-2:-1:0:0"
+      },
+      {
+        "center": [
+          1.3407879561828706,
+          -1.2137978962949678,
+          0.07502274855131595
+        ],
+        "id": "stair_6_7/1/frame_000065.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000065.jpg",
+        "sha256": "cfed5005a322cc5685024f6433042c5cf61d905e771e625fd936b89dd3d3571e",
+        "split": "train",
+        "view": [
+          -0.10292916670917523,
+          0.16479040499971945,
+          0.9809432751492735
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 65,
+        "place": "project:3:-2:0:0:0"
+      },
+      {
+        "center": [
+          1.4647498788469542,
+          -1.2715898544599642,
+          0.6037749352377385
+        ],
+        "id": "stair_6_7/1/frame_000070.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000070.jpg",
+        "sha256": "ca0fa4a8b67c7e4f738bd1e7b52092bbf90cbbad9640a1f7ae0898c9b531fbeb",
+        "split": "train",
+        "view": [
+          -0.1900022628252535,
+          -0.009842026749665927,
+          0.9817343197783921
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 70,
+        "place": "project:3:-3:1:0:0"
+      },
+      {
+        "center": [
+          -1.1673429538445892,
+          -1.182874349640122,
+          2.424973110357297
+        ],
+        "id": "stair_6_7/1/frame_000133.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000133.jpg",
+        "sha256": "1fd42021e2451806963561f9dd8d772885150f1ee04440785bf85f7f26a3859c",
+        "split": "train",
+        "view": [
+          0.033789029645384404,
+          0.8117028456517111,
+          -0.5830924385005672
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 133,
+        "place": "project:-2:-2:5:4:1"
+      },
+      {
+        "center": [
+          -1.2737427946356863,
+          -0.5823971306419264,
+          1.9958709163378048
+        ],
+        "id": "stair_6_7/1/frame_000138.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000138.jpg",
+        "sha256": "fcdf4e0c146880e32a2138a87fd00869f31c1ffd5c6661815f12b34ebcd5e174",
+        "split": "train",
+        "view": [
+          0.27221508766861596,
+          0.8410380146410714,
+          -0.46749759782716815
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 138,
+        "place": "project:-3:-1:4:3:1"
+      },
+      {
+        "center": [
+          -1.548870009475422,
+          0.11185990629275883,
+          1.6339936284669199
+        ],
+        "id": "stair_6_7/1/frame_000144.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000144.jpg",
+        "sha256": "be874988273686ed8d1995785b8e9a147c2030689ff786bc98b7b63a763fb0dc",
+        "split": "train",
+        "view": [
+          0.3806914109558037,
+          0.8459111042504849,
+          -0.3735083042319205
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 144,
+        "place": "project:-3:0:3:3:1"
+      },
+      {
+        "center": [
+          -1.6862000735236187,
+          0.6413388962977978,
+          1.212243753813479
+        ],
+        "id": "stair_6_7/1/frame_000149.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000149.jpg",
+        "sha256": "a19ee4db443864656e8609103301cf3b7a2e3bed5a9894fd85cec737d019c42c",
+        "split": "train",
+        "view": [
+          0.30631996975197406,
+          0.850141224351102,
+          -0.42828492244060995
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 149,
+        "place": "project:-3:1:2:3:1"
+      },
+      {
+        "center": [
+          -1.6705396435083952,
+          1.219303093220047,
+          0.7070248461362179
+        ],
+        "id": "stair_6_7/1/frame_000155.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000155.jpg",
+        "sha256": "fbca43c5b84345bb8d517c5a647d50587c2fabe324bf526d0edae815a623b539",
+        "split": "train",
+        "view": [
+          0.7078927960545275,
+          0.7032667793831178,
+          -0.065602029771955
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 155,
+        "place": "project:-3:2:1:2:1"
+      },
+      {
+        "center": [
+          -1.3959830678779659,
+          1.3768319029805687,
+          0.5240095889865672
+        ],
+        "id": "stair_6_7/1/frame_000160.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000160.jpg",
+        "sha256": "0ec4c16601ed36539c5f2fd657d2a0c2728eacf9f56a62d80a4d15826837af81",
+        "split": "train",
+        "view": [
+          0.5947418829963348,
+          0.7606209978395897,
+          -0.2602648463690038
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 160,
+        "place": "project:-3:3:1:3:1"
+      },
+      {
+        "center": [
+          -0.7201796568939087,
+          1.7742857042563496,
+          0.025499657673699723
+        ],
+        "id": "stair_6_7/1/frame_000165.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000165.jpg",
+        "sha256": "cfbaa885f04dd9a88eb24737d4158b4841e3e13785d448a99204799b28d7b8b7",
+        "split": "train",
+        "view": [
+          0.21361473356165736,
+          0.7920758694776431,
+          -0.571825640030786
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 165,
+        "place": "project:-1:4:0:4:1"
+      },
+      {
+        "center": [
+          -0.4453564240521955,
+          2.2889373155215615,
+          -0.7983659933148224
+        ],
+        "id": "stair_6_7/1/frame_000171.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000171.jpg",
+        "sha256": "687f3b4798f6d3bace99797c6802b0618e7c28b5fc6db01bb7e3519d531c3581",
+        "split": "train",
+        "view": [
+          -0.601426076793142,
+          0.595339623443771,
+          -0.5327827013999598
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 171,
+        "place": "project:-1:5:-2:-3:1"
+      },
+      {
+        "center": [
+          -0.5584346179905195,
+          2.5060326950119776,
+          -1.2840515385444853
+        ],
+        "id": "stair_6_7/1/frame_000176.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000176.jpg",
+        "sha256": "00fffc77568fc2a1cab8fc90e6c463c1411756fc781055b316c37dc3ef2fa1d7",
+        "split": "train",
+        "view": [
+          -0.9679502882842435,
+          0.2277507169959801,
+          -0.10583879401366418
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 176,
+        "place": "project:-1:5:-3:-2:0"
+      },
+      {
+        "center": [
+          -0.67782072551702,
+          2.5059416265063486,
+          -1.3864953734802519
+        ],
+        "id": "stair_6_7/1/frame_000182.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000182.jpg",
+        "sha256": "3b3594daa1e3b7e1798277dd6f4f08587a066846e8b8711af6660cad299b2e77",
+        "split": "train",
+        "view": [
+          -0.3119299505440334,
+          0.6199412929126886,
+          -0.7199809020351449
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 182,
+        "place": "project:-1:5:-3:-3:1"
+      },
+      {
+        "center": [
+          -0.5970307469491816,
+          2.3027059803991534,
+          -0.9839701918662539
+        ],
+        "id": "stair_6_7/1/frame_000187.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000187.jpg",
+        "sha256": "3abb546b62d242645597dff36ca7bac371e138c9fc0c18dcf044b7db23797278",
+        "split": "train",
+        "view": [
+          0.3481678408440371,
+          0.7370613609179546,
+          -0.5792406277565258
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 187,
+        "place": "project:-1:5:-2:3:1"
+      },
+      {
+        "center": [
+          -0.6209215376587676,
+          2.4016466788372326,
+          -1.1540018791742734
+        ],
+        "id": "stair_6_7/1/frame_000193.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000193.jpg",
+        "sha256": "e7db92976772533e5d37558437117c1fc40370d734c91e3acc8f6b85f162e639",
+        "split": "train",
+        "view": [
+          0.7753557104446945,
+          0.5794416378315173,
+          -0.25113922558599266
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 193,
+        "place": "project:-1:5:-2:2:1"
+      },
+      {
+        "center": [
+          -0.45339909229911174,
+          2.681821843584353,
+          -1.6036231468149074
+        ],
+        "id": "stair_6_7/1/frame_000198.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000198.jpg",
+        "sha256": "9527a41fdb86d1627af307a09d9bdd8a26c343907707122bd618e5eaa420f701",
+        "split": "train",
+        "view": [
+          0.8383925900964914,
+          0.5255053034935837,
+          -0.1447136512959756
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 198,
+        "place": "project:-1:5:-3:2:1"
+      },
+      {
+        "center": [
+          0.2828504060260507,
+          3.1863438366275467,
+          -2.2770469621076725
+        ],
+        "id": "stair_6_7/1/frame_000204.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000204.jpg",
+        "sha256": "689d1dba9035aa13cda706ded57c031dff8d1ec2212e950f658dc31bc21036bb",
+        "split": "train",
+        "view": [
+          0.9253463839069195,
+          0.3790115426790956,
+          0.009182608910341386
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 204,
+        "place": "project:1:6:-5:2:0"
+      }
+    ],
+    "dev": [
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-03/frame-000000.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-03",
+        "frame": 0,
+        "center": [
+          -0.051365793,
+          -0.78486353,
+          -0.70112866
+        ],
+        "view": [
+          0.07109105460913169,
+          0.358510688772138,
+          0.9308147764140235
+        ],
+        "sha256": "f4b86066ab446c220847f8c101b42bb2282da71075800ad3057ee29506005aa7",
+        "place": "7scenes:chess:0:-2:-1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-03/frame-000666.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-03",
+        "frame": 666,
+        "center": [
+          1.5144825,
+          -0.39960366,
+          0.96411008
+        ],
+        "view": [
+          -0.6146618235080415,
+          0.22360288817877763,
+          0.7564341287381726
+        ],
+        "sha256": "9a3530db48d268b541bd1610dd536c94160a3d6b9d58d5106cef8453d7fa5c02",
+        "place": "7scenes:chess:3:-1:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-05/frame-000332.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-05",
+        "frame": 332,
+        "center": [
+          0.82553494,
+          -0.96914738,
+          0.88119721
+        ],
+        "view": [
+          -0.4396812877065168,
+          0.6447221438019876,
+          0.6253109006982914
+        ],
+        "sha256": "5e27dd1a3d601504a56d06fb7584bfcfbdbb80807045fd30f70f93bdb1639766",
+        "place": "7scenes:chess:2:-2:2:-1:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/chess/seq-05/frame-000999.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "chess",
+        "sequence": "seq-05",
+        "frame": 999,
+        "center": [
+          -0.17755082,
+          -0.47015253,
+          -0.47812217
+        ],
+        "view": [
+          -0.3172637698948724,
+          0.2623601053774375,
+          0.9113236940947127
+        ],
+        "sha256": "d2dec389a80a433c87d2017f8d08e832af951a04dead160577052f73a6629122",
+        "place": "7scenes:chess:0:-1:-1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-03/frame-000000.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-03",
+        "frame": 0,
+        "center": [
+          -0.026627831,
+          -0.40136248,
+          0.23761126
+        ],
+        "view": [
+          0.10631306574136909,
+          0.28293293452990825,
+          0.9532295036406322
+        ],
+        "sha256": "1ced616c394594d12d42b95ff18030ee99715d78220a24920f39eaf5a058d1ed",
+        "place": "7scenes:fire:0:-1:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-03/frame-000661.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-03",
+        "frame": 661,
+        "center": [
+          0.12196999,
+          -0.65496105,
+          0.95573109
+        ],
+        "view": [
+          0.22768806175443623,
+          0.4741296865643705,
+          0.850505253865536
+        ],
+        "sha256": "b0d9ef8688b21da207e102f69c1bd7f87f02aa3d48b1eaf4a91a255fd31959df",
+        "place": "7scenes:fire:0:-1:2:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-04/frame-000329.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-04",
+        "frame": 329,
+        "center": [
+          0.3340511,
+          -0.47666451,
+          0.53909338
+        ],
+        "view": [
+          -0.2352476781924269,
+          0.6543335553255987,
+          0.7186836079110431
+        ],
+        "sha256": "3fc62801edc0ad62b348dd99603c4241fd8f125be5ab40ea18bc9da49b1d07a9",
+        "place": "7scenes:fire:1:-1:1:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/fire/seq-04/frame-000999.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "fire",
+        "sequence": "seq-04",
+        "frame": 999,
+        "center": [
+          -0.98283899,
+          0.25330746,
+          0.62105256
+        ],
+        "view": [
+          0.6994964934312576,
+          -0.08596557265920927,
+          0.7094466688869212
+        ],
+        "sha256": "d39eefb380cccaf6ae999b3bbbce968759bde73c1b35d101725e0965f1ffb2c7",
+        "place": "7scenes:fire:-2:1:1:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-01/frame-000000.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-01",
+        "frame": 0,
+        "center": [
+          -0.14959294,
+          -0.13273862,
+          0.18034773
+        ],
+        "view": [
+          -0.3633502547850818,
+          0.23723189842472447,
+          0.9009426278722843
+        ],
+        "sha256": "a9dc174f3983cc8ba9bd6a31a9835f3a930b99eaf5aebd3d0f51a1c5ec92b90d",
+        "place": "7scenes:heads:0:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-01/frame-000348.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-01",
+        "frame": 348,
+        "center": [
+          1.0092106,
+          -0.21419947,
+          0.0078852437
+        ],
+        "view": [
+          -0.5314061485171556,
+          0.3356682537709133,
+          0.777775243067397
+        ],
+        "sha256": "c2921322c64b1569cae766e37e0b73166bd7ce1e38a6889bf5b402072db09b15",
+        "place": "7scenes:heads:2:0:0:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-01/frame-000663.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-01",
+        "frame": 663,
+        "center": [
+          0.078805164,
+          0.25179124,
+          -0.10787093
+        ],
+        "view": [
+          0.4031331025146945,
+          0.08414242360487711,
+          0.9112649198815755
+        ],
+        "sha256": "d7110a1ed9f9557ea5807d7eb89dcdd30a31797637aca48aae3eb6a3585277c4",
+        "place": "7scenes:heads:0:1:0:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/heads/seq-01/frame-000999.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "heads",
+        "sequence": "seq-01",
+        "frame": 999,
+        "center": [
+          -0.72984886,
+          -0.19950381,
+          0.17588945
+        ],
+        "view": [
+          0.24453998309812205,
+          0.2736429085591169,
+          0.9302256474972495
+        ],
+        "sha256": "e9eb812eeaa05798ea785aa9191002d313192266bfe1131c77385f8e13e33389",
+        "place": "7scenes:heads:-1:0:0:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-02/frame-000000.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-02",
+        "frame": 0,
+        "center": [
+          -0.6582703,
+          -0.66375178,
+          0.51635194
+        ],
+        "view": [
+          0.9016438364767778,
+          0.1426240238540088,
+          0.40828516990349856
+        ],
+        "sha256": "3169793d0194360690500dcee0b69b7e1135e7666411319c247bc0865013b557",
+        "place": "7scenes:office:-1:-1:1:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-06/frame-000372.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-06",
+        "frame": 372,
+        "center": [
+          0.05116187,
+          -1.1401939,
+          1.3453022
+        ],
+        "view": [
+          -0.14745561155956333,
+          0.5640473072807567,
+          0.8124699857649653
+        ],
+        "sha256": "55e47d3a7e32255dda1f827f32e96e9b46f724dfdfce2817e15abe6f09c3e81e",
+        "place": "7scenes:office:0:-2:3:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-07/frame-000723.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-07",
+        "frame": 723,
+        "center": [
+          -0.40711197,
+          -0.93340862,
+          0.99241793
+        ],
+        "view": [
+          -0.7990157418419421,
+          0.3414108680599736,
+          0.4949873366656022
+        ],
+        "sha256": "f2303090de65e4a87d1dd4ed542eb2ef3485c1eb6faf9f528ca70044e88a9b3b",
+        "place": "7scenes:office:-1:-2:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/office/seq-09/frame-000999.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "office",
+        "sequence": "seq-09",
+        "frame": 999,
+        "center": [
+          -1.0473441,
+          -0.56079572,
+          0.85003811
+        ],
+        "view": [
+          0.6776398161363713,
+          0.18262196541421694,
+          0.7123577032186241
+        ],
+        "sha256": "2cfee66e654c03b2ecf886a5a0c5d24a818fb8afbe6e89986abf27cd7702ed19",
+        "place": "7scenes:office:-2:-1:2:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-01/frame-000000.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-01",
+        "frame": 0,
+        "center": [
+          -0.67636913,
+          -0.48322707,
+          -0.28379661
+        ],
+        "view": [
+          0.27083895815185144,
+          0.23488858826095224,
+          0.9335275088887292
+        ],
+        "sha256": "938113335387c3537db70a5deb7e24793dbae9467007594622e6532d7cd5a29b",
+        "place": "7scenes:pumpkin:-1:-1:-1:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-01/frame-000661.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-01",
+        "frame": 661,
+        "center": [
+          -0.81184018,
+          -0.97488779,
+          1.0809696
+        ],
+        "view": [
+          -0.0655347744129111,
+          -0.06635095649112002,
+          0.9956418753323719
+        ],
+        "sha256": "7096f43419fc66425fa79851178507f650edeca99bee9b5f12f74be2b7d1e9fe",
+        "place": "7scenes:pumpkin:-2:-2:2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-07/frame-000337.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-07",
+        "frame": 337,
+        "center": [
+          0.94039196,
+          -0.77053064,
+          0.78496283
+        ],
+        "view": [
+          -0.5719065347970724,
+          0.0960330580215199,
+          0.814678198568883
+        ],
+        "sha256": "174807a98e5df50ae48e229f8a52a6ebdd1f63dbc6bedfcc1e6c0dcd81a20829",
+        "place": "7scenes:pumpkin:2:-2:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/pumpkin/seq-07/frame-000999.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "pumpkin",
+        "sequence": "seq-07",
+        "frame": 999,
+        "center": [
+          0.63382483,
+          -1.2759477,
+          0.81434023
+        ],
+        "view": [
+          -0.41068291598024403,
+          -0.41006816421054604,
+          0.8143608802140219
+        ],
+        "sha256": "3882c0bd55e3702af4bf2794fd6e878cac166241c05fe8ce965c5110cbca26f9",
+        "place": "7scenes:pumpkin:1:-3:2:-1:-1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-03/frame-000000.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-03",
+        "frame": 0,
+        "center": [
+          -0.57694721,
+          0.12785351,
+          -0.07238695
+        ],
+        "view": [
+          -0.6063309566838024,
+          -0.2612084757985567,
+          0.7510878132002273
+        ],
+        "sha256": "821172e3d125a9c525640ed77cac6c86f31a793828fe97f1866031810ec1857f",
+        "place": "7scenes:redkitchen:-1:0:0:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-04/frame-000717.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-04",
+        "frame": 717,
+        "center": [
+          1.2041526,
+          -0.95186168,
+          1.9259804
+        ],
+        "view": [
+          -0.8608164727338932,
+          0.09266030433570413,
+          0.500408901070308
+        ],
+        "sha256": "8ca06fcf4ed1e725dae1de99a8368452c5c50b6653ce2fa7cf4f5116ed08d63e",
+        "place": "7scenes:redkitchen:2:-2:4:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-12/frame-000365.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-12",
+        "frame": 365,
+        "center": [
+          -1.4988911,
+          -0.78154904,
+          1.6152854
+        ],
+        "view": [
+          0.8261828008938733,
+          0.3733649851260595,
+          0.4219248361840909
+        ],
+        "sha256": "63fd2ac6e47ca0b2d279c7449f540d73274f21f0d65b3777127f2372638271bc",
+        "place": "7scenes:redkitchen:-3:-2:3:1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/redkitchen/seq-14/frame-000999.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "redkitchen",
+        "sequence": "seq-14",
+        "frame": 999,
+        "center": [
+          1.3048754,
+          -0.46292508,
+          1.0925947
+        ],
+        "view": [
+          -0.6759536799867092,
+          0.2914559800769591,
+          0.6768604244523422
+        ],
+        "sha256": "2b6867d4b860140b2dd481f23ac172bde09c1460fe62713e6f79ba62a5027602",
+        "place": "7scenes:redkitchen:3:-1:2:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-01/frame-000000.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-01",
+        "frame": 0,
+        "center": [
+          -1.4903377,
+          -0.49737796,
+          -0.054694783
+        ],
+        "view": [
+          0.2181080380785828,
+          0.3916195495681818,
+          0.8939032453915389
+        ],
+        "sha256": "467edf9f5d76da72063e7a1dfda144342fa58dcaf38555f88de7b15b10dde344",
+        "place": "7scenes:stairs:-3:-1:0:0:1"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-01/frame-000333.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-01",
+        "frame": 333,
+        "center": [
+          -0.098498762,
+          -1.128636,
+          1.0462391
+        ],
+        "view": [
+          0.26810426159248735,
+          0.17018033356767628,
+          0.9482398214495854
+        ],
+        "sha256": "d08cd77f05831b1dfc2bb91132eb0127b83be09767213756b60117b1cabcc65b",
+        "place": "7scenes:stairs:0:-2:2:0:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-04/frame-000166.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-04",
+        "frame": 166,
+        "center": [
+          0.19759105,
+          -1.1276321,
+          0.22707185
+        ],
+        "view": [
+          -0.5406753716509571,
+          0.13490774615311885,
+          0.8303433280986756
+        ],
+        "sha256": "0df498723e0ed973d2ed64604885467af1ec24f05cbf4159ff90a88d0e52e1f8",
+        "place": "7scenes:stairs:0:-2:0:-1:0"
+      },
+      {
+        "path": "/home/quyet/k210_lab/datasets/7scenes/stairs/seq-04/frame-000499.color.png",
+        "split": "dev",
+        "domain": "indoor",
+        "scene": "stairs",
+        "sequence": "seq-04",
+        "frame": 499,
+        "center": [
+          0.098181851,
+          -0.93489593,
+          1.0898077
+        ],
+        "view": [
+          -0.04139892853626357,
+          0.5075664554442713,
+          0.8606174655581816
+        ],
+        "sha256": "07ee041878fbab4a6ae3ae6fed66deacb2a5a72e726252703ed34991123db24a",
+        "place": "7scenes:stairs:0:-2:2:0:1"
+      },
+      {
+        "center": [
+          1.7649421961733391,
+          -1.2912578304478335,
+          1.5517861756319213
+        ],
+        "id": "stair_6_7/1/frame_000082.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000082.jpg",
+        "sha256": "be3d77fe21a6c00b1434058bcecc23df3bf819969621af77b1615ec3d9aa5ec7",
+        "split": "dev",
+        "view": [
+          -0.44825371540339287,
+          -0.18185213870400463,
+          0.8752133490045919
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 82,
+        "place": "project:4:-3:3:-1:0"
+      },
+      {
+        "center": [
+          1.7461164205281472,
+          -1.2387104333823218,
+          1.5906995430809783
+        ],
+        "id": "stair_6_7/1/frame_000085.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000085.jpg",
+        "sha256": "7d9cfbebd2e70b70c646fd6ba69f777d84883ad57f18a2a8708dcac03a01b149",
+        "split": "dev",
+        "view": [
+          -0.777308402128956,
+          0.095138274156599,
+          0.6218845204459049
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 85,
+        "place": "project:3:-2:3:-1:0"
+      },
+      {
+        "center": [
+          1.7492996949734894,
+          -1.249798217053357,
+          1.8927523003275386
+        ],
+        "id": "stair_6_7/1/frame_000088.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000088.jpg",
+        "sha256": "8abc477339bda459731470dd202e1ffb7da49d31605cc17441a27315dc9293aa",
+        "split": "dev",
+        "view": [
+          -0.8071709575852154,
+          0.008965867803372595,
+          0.5902496577258635
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 88,
+        "place": "project:3:-2:4:-1:0"
+      },
+      {
+        "center": [
+          1.728158818366168,
+          -1.2778373075534621,
+          2.198095473068703
+        ],
+        "id": "stair_6_7/1/frame_000091.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000091.jpg",
+        "sha256": "1eb5dd74278590066322d7d7a4d926f650f576df9cfd3a10b602aca81fc17b28",
+        "split": "dev",
+        "view": [
+          -0.7913145316925323,
+          -0.02506950800949201,
+          0.610895106954042
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 91,
+        "place": "project:3:-3:4:-1:0"
+      },
+      {
+        "center": [
+          1.7095131931376146,
+          -1.230609759755826,
+          2.6527337990773407
+        ],
+        "id": "stair_6_7/1/frame_000094.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000094.jpg",
+        "sha256": "f194ff2731e6460367ffd82e02f458532e90370cf6158e8a2330d0d058bef92b",
+        "split": "dev",
+        "view": [
+          -0.8180525134393144,
+          0.043343892995986295,
+          0.5735079704725758
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 94,
+        "place": "project:3:-2:5:-1:0"
+      },
+      {
+        "center": [
+          1.7541180880234835,
+          -1.3445748998747662,
+          3.0705347566643524
+        ],
+        "id": "stair_6_7/1/frame_000097.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000097.jpg",
+        "sha256": "71c512cf06f13d852a6b681ecb8fa17a826c71d2c89deb117b7b290b2ffc519a",
+        "split": "dev",
+        "view": [
+          -0.972378774026247,
+          0.20645110344403464,
+          0.10889197266076812
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 97,
+        "place": "project:4:-3:6:-2:0"
+      },
+      {
+        "center": [
+          1.6117262736365976,
+          -1.6036517939053916,
+          3.392357770389574
+        ],
+        "id": "stair_6_7/1/frame_000100.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000100.jpg",
+        "sha256": "7e1a60f85a91f28ed772b79e39040910df98a9466e4e45612a9ddd8520105444",
+        "split": "dev",
+        "view": [
+          -0.9826664858530704,
+          0.165928348541885,
+          -0.08267019252028061
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 100,
+        "place": "project:3:-3:7:-2:0"
+      },
+      {
+        "center": [
+          1.0231943623223534,
+          -1.839537462449315,
+          3.6520691799664955
+        ],
+        "id": "stair_6_7/1/frame_000103.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000103.jpg",
+        "sha256": "df5b8cb694a2e8f71b6250aef5f24f225e3e1ace870dafc36d175dd72e6a0b42",
+        "split": "dev",
+        "view": [
+          -0.8757679581038982,
+          0.3767075744615847,
+          -0.3018640205486548
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 103,
+        "place": "project:2:-4:7:-2:0"
+      },
+      {
+        "center": [
+          0.5092096889010148,
+          -1.9210371844956105,
+          3.719630472815567
+        ],
+        "id": "stair_6_7/1/frame_000106.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000106.jpg",
+        "sha256": "7972897c90e73fac53e1cba6d60d720fe13a8e6131dd5711f9342b97917477e3",
+        "split": "dev",
+        "view": [
+          -0.5722069211558699,
+          0.6928695032844437,
+          -0.43876085832682055
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 106,
+        "place": "project:1:-4:7:-3:1"
+      },
+      {
+        "center": [
+          0.21077899358315189,
+          -2.026578737356243,
+          3.7089675280408416
+        ],
+        "id": "stair_6_7/1/frame_000109.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000109.jpg",
+        "sha256": "41f695cde912adc13999743103bbfe03e01aa0a014c578f2c70ce089a69a495f",
+        "split": "dev",
+        "view": [
+          -0.006709145394714147,
+          0.7416205872084708,
+          -0.6707860254929553
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 109,
+        "place": "project:0:-4:7:-4:1"
+      },
+      {
+        "center": [
+          0.14448642111130833,
+          -2.1122962158284495,
+          3.7800851647831477
+        ],
+        "id": "stair_6_7/1/frame_000112.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000112.jpg",
+        "sha256": "3f41fb026644b1d9a1ea9f14011c1ceef7ecb4cb6ed222cf2b14fa5d207fd0ff",
+        "split": "dev",
+        "view": [
+          0.12770908986944293,
+          0.670577100904504,
+          -0.7307644901794486
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 112,
+        "place": "project:0:-4:8:4:1"
+      },
+      {
+        "center": [
+          0.2667269074465194,
+          -2.1346027018557097,
+          3.838411544957108
+        ],
+        "id": "stair_6_7/1/frame_000115.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000115.jpg",
+        "sha256": "62cb66da4a2efedd06c6c8f78ab0980ea164c67207a189b0dfb2fe6d49ccdd4c",
+        "split": "dev",
+        "view": [
+          0.42530527201203383,
+          0.6894912370029445,
+          -0.5862740482870785
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 115,
+        "place": "project:1:-4:8:3:1"
+      },
+      {
+        "center": [
+          -0.0014580397098357724,
+          -2.1789090256102757,
+          3.8389125916685054
+        ],
+        "id": "stair_6_7/1/frame_000118.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000118.jpg",
+        "sha256": "202f9e5ad6b6c22a65c50024cf304c622b58b6ba06ab3cfb61b6321ffc222687",
+        "split": "dev",
+        "view": [
+          0.3016524691973548,
+          0.7015538732744938,
+          -0.6456221423717549
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 118,
+        "place": "project:0:-4:8:3:1"
+      },
+      {
+        "center": [
+          -0.42602427075701377,
+          -2.101299604133359,
+          3.6165961447881947
+        ],
+        "id": "stair_6_7/1/frame_000122.jpg",
+        "path": "/home/quyet/edge_ai_project/assets/stair_6_7/1/frame_000122.jpg",
+        "sha256": "e783a6d5977bae6c215a4f98f84bd46c40ccada2717994f4d41d16bb10fe1f7f",
+        "split": "dev",
+        "view": [
+          0.012876971046085936,
+          0.7178461820481119,
+          -0.6960826405935054
+        ],
+        "domain": "project",
+        "scene": "project_stair",
+        "sequence": "1",
+        "frame": 122,
+        "place": "project:-1:-4:7:4:1"
+      }
+    ]
+  },
+  "data_source_sha256": "c8913a755b941fe4d48df443bc76a28eb5518cb5f4efc98b998ac7df11da46ba",
+  "old_indoor_manifest_sha256": "aab9eced2061143c839f2922346410fc5eeb2502a8f7dc8c7cc0598f81ba5a6f",
+  "teacher_sha256": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e",
+  "preprocessing": "gray /255, common aspect-preserving letterbox at 288x512, then resize common content to144x256 or180x320 +2px sides; full source FOV retained; zero padding masked",
+  "geometry": "fresh deterministic per-source affine +/-10deg, scale .92..1.08, translation +/-4 canonical pixels; photometric .8..1.2; one fixed pair/source; canonical144x256 coordinate frame",
+  "supervision": "detector teacher KL T1 weight1 over fully valid cells + symmetric homography correspondence InfoNCE T.1 weight1; no descriptor KD",
+  "initialization": "deterministic original-teacher L1 output-filter transfer conditioned on previous selected channels; same weights for same width at both resolutions; fresh AdamW",
+  "sampling": "same seeded source plan, uniform among140 TRAIN images, two pairs/update; no scene balancing experiment",
+  "optimizer": "AdamW lr1e-4 wd1e-4 cosine1e-5 clip10; 400 updates; accumulated mean over2 pairs",
+  "resources": {
+    "CPU_threads": 2,
+    "workers": 0,
+    "physical_batch_images": 2,
+    "accumulation_pairs": 2,
+    "AMP": false,
+    "reason": "CPU FP32, zero training VRAM",
+    "teacher_resident_during_training": false,
+    "minimum_available_RAM_MiB": 1536
+  },
+  "features": "softmax, valid-content mask with4 canonical-pixel border, NMS radius round(3*scale), threshold.005, top160, original descriptor sampling, CPU L2",
+  "metrics": "MNN precision and count; correct MNN; repeatability at3 canonical pixels; correct-match occupied4x4 content bins/16; mutual visible overlap only",
+  "selection": "lexicographic equal-scene macro correct_mnn_count, mnn_precision, repeatability; earliest tie. Report domains separately.",
+  "scope": "single deterministic initialization strategy, small synthetic-homography DEV screening; related project sequences; not independent pose quality, not full training or INT8 quality",
+  "amendment": "v2: exact intersection of canonical training correspondences across resolutions, fixed before rerun; v1 excluded from ranking; data/teacher/optimizer/budget unchanged",
+  "GT1_used": false,
+  "MixVPR_modified": false,
+  "code_sha256": "34e647aff6b0a4c34b6a6412ced0665379f66d99fabca4fe161cd0e365b8008f"
+}

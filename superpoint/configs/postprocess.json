@@ -1,0 +1,8 @@
+{
+  "nms": "original",
+  "status": "GREEDY_REGRESSION_GATE_FAILED_NOT_PROMOTED",
+  "candidate_tested": "point_geometry_r2_cw",
+  "gate_protocol_sha256": "6dcb23ea91218e348d1eea51059dd8db4d40b77be0933a3b62137a74df13b6f7",
+  "reason": "INT8 precision drop7.39percentage points exceeds predeclared2point guard; FP32 passes and floor6 INT8 improves",
+  "threshold_and_topk": "unchanged in metrics.features"
+}
